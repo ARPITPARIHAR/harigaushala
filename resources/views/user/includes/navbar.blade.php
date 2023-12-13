@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hari pinjara pol Gaushala</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+
+   
+
+
+   
+
+
+  
+
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+   
+                
+                 
+                {{-- <img class="mk-desktop-logo light-logo" alt="Shree Krishna Gaushala" src="https://shreekrishnagaushala.com/wp-content/uploads/2016/09/logo_gaushala.png"> --}}
+                <div class="mk-header d-flex align-items-center justify-content-center">
+                    <div class="logo-container">
+                        <img class="mk-desktop-logo dark-logo rounded-circle" alt="Shree Krishna Gaushala" src="img/cow.jpg">
+                    </div>
+                    
+                    
+                    <div class="name text-center" ><h5 class="blink-text"style="color:red!important;">SINCE - 1980</h5>
+                        <h3 style="font-size: 55px; color:#520102; font-family: sans-serif;">SHRI HARI PINJARA POL GAUSHALA</h3>
+                        <div class="founder-info">
+                            <p class="founder-name">Founder: Ratan Lal Parihar</p>
+                        </div>
+                        
+                        <span class="registration-number" style="color:black"><strong> Registration No : 164/98 </strong></span>
+                    </div>
+                </div>
+                
+                
+            
+    </header>
+    
+    
+ 
+    <div class="container-fluid sticky-top" style="background-color: 	#8B0000!important;">
+    
+        <div class="container">
+            <nav class="navbar navbar-expand-lg py-2 py-lg-0" style="background-color:	#8B0000 !important;">
+                <a href="index.html" class="navbar-brand text-white">
+                    
+                </a>
+                <div class="ga-name text-white text-lg font-bold" >
+                    {{-- <h3 style="color:white !important;">श्री हरि पिंजरा पोल गौशाला</h3> --}}
+                </div>
+                
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                  
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="/" class="nav-item nav-link text-white">Home</a>
+                        <a href="founder" class="nav-item nav-link text-white">Founder Message</a>
+                        <a href="about" class="nav-item nav-link text-white">About Us</a>
+                        <a href="razorpay" class="nav-item nav-link text-white">Gallery</a>
+                        <a href="product.html" class="nav-item nav-link text-white">Our Activities</a>
+                        <a href="contact" class="nav-item nav-link text-white">Contact Us</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-item nav-link donateBtn text-white" id="showDonationForm">
+                    <span>Donate</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+   
+
+
+    <div class="donation-slider-wrapper">
+    <div class="donation-form-container" style="height:1500px;"    id="donationFormContainer">
+        <div class="close-symbol" id="closeSymbol">&times;</div>
+        <h3 class="donation-form-header" style="color:black";>Make a Donation</h3>
+        <div class="gaushala-name">
+            <h4 class="attractive-text" style="color:#8B0000 !important;margin-left:80px!important;">Shree Hari Pinjara Pol Gaushala</h4>
+        </div>
+        <div class="container">
+            <form id="donation-form" action="{{ route('razorpay.create') }}" method="POST">
+                @csrf 
+            <form id="donation-form">
+                <div class="form-group">
+                    <label for="full-name" > Full Name</label>
+                    <input type="text" id="full-name" class="form-control" style="background-color:black; color: white !important;border-radius:10px;" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile-number">Mobile Number</label>
+                    <input type="tel" id="mobile-number" class="form-control" style="background-color:black; color: white !important;border-radius:10px;" required>
+                </div>
+                <div class="form-group">
+                    <label for="home-address">Home Address</label>
+                    <textarea id="home-address" class="form-control" style="background-color:black; color: white !important; border-radius:10px;" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="pan-number">Donation Amount</label>
+                    <input type="text" id="pan-number" class="form-control" style="background-color: black; color: white !important; border-radius:10px;text-align:center;" required>
+                </div>
+       
+                    <button type="submit" class="btn btn-primary" id="proceed-to-pay-button">
+                        Proceed to Pay
+                    </button>
+                </div>
+                
+                
+            </form>
+    
+            
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+
+    
+
+    <script>
+        // JavaScript code
+        let selectedDonation = 0;
+
+        // Function to set the selected donation amount
+        function setDonationAmount(amount) {
+            selectedDonation = amount;
+            displaySelectedAmount(); // Update selected donation amount display
+        }
+
+        // Function to display the selected donation amount
+        function displaySelectedAmount() {
+            let selectedAmountContainer = document.getElementById('selected-amount-container');
+            selectedAmountContainer.innerHTML = `Selected Donation Amount: $${selectedDonation}`;
+        }
+    </script>
+</body>
+</html>
+
+    
+    <style>
+
+.preloader {
+    display: none;
+}
+
+
+#proceed-button-container {
+    text-align: center; /* To center-align the button horizontally */
+    margin-top: 20px; /* Adjust this value as needed to create space between the form and the button */
+}
+
+
+
+        .mk-header {
+    width: 100%;
+    position: relative;
+    background-color:#FCD6A7!important;
+height:200px;
+} 
+.logo-container {
+    width: 150px; 
+    height: 150px; 
+    overflow: hidden;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This makes the image cover the circular container */
+}
+.registration-number {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    font-size: 18px; 
+   
+}
+..founder-info {
+    text-align: center;
+    background-color: #3b5998;
+    color: white;
+    padding: 20px; 
+    border-radius: 20px;
+    width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+}
+
+.founder-name {
+    font-family: ui-rounded;
+   
+
+    font-size: 32px;
+    color: navy;
+    font-weight: bold !important;
+    
+
+    opacity: 1; /* Remove opacity, so text is fully visible */
+}
+
+
+.founder-name:hover {
+    text-decoration: underline; /* Underline on hover for interactivity */
+    color: #004225; /* Slightly change the text color on hover */
+}
+
+ .header-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.donation-slider-wrapper {
+            position: relative;
+        }
+       
+        .navbar-toggler {
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+}
+
+
+.navbar-toggler {
+    position: absolute !important;
+    right: 50% !important;
+    transform: translateX(50%) !important;
+}
+
+
+        .span{
+           
+        }   .navbar-nav .nav-item.nav-link:hover {
+            color: black !important;
+        }
+
+        .donateBtn {
+            transition: all 0.5s ease  !important;
+            min-width: 130px  !important;
+            display: block  !important;
+            border: 1px solid  !important;
+            font-size: 17px  !important;
+            background-color: black !important;
+            color: white  !important;
+            text-align: center;
+           
+            border-radius: 0px 30px 30px 30px!important;
+            
+        }
+
+        .close-symbol {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        cursor: pointer;
+        color: black;
+    }
+ 
+        .nav-container{
+            background-color: #80d0c7!important;
+        }
+
+        .donation-form-container {
+    position: fixed;
+    /* Adjust this value to control how much space you want from the top */
+    margin-top:480px; /* Adjust this value to add margin from the top */
+    left: 60%;
+    margin-bottom:80px; 
+    width: 40%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+  
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+#scrollable-container {
+    max-height: 200px; /* Adjust the max height as needed */
+    margin-top: 20px; /* Adjust the margin as needed to create space between the form and the button */
+}
+
+
+/* Add margin to the right side of the form */
+.donation-form-container {
+     /* Adjust this value as needed */
+}
+
+/* Style the "Proceed to Pay" button */
+#proceed-to-pay-button {
+    display: block;
+    margin: 20px auto; /* Adjust this value as needed */
+    background-color: #00008B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.gaushala-name {
+    margin-top: 20px;
+}
+
+.attractive-text {
+    color: white!important; 
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.donation-form-header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    color:rgba(163, 11, 105, 0.801);
+}
+
+
+
+.form-group {
+    
+        width: 100%;
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 1.5px solid #ccc;
+        margin-bottom: 1rem;
+        border-radius: 0.3rem;
+        font-family: 'Handlee', cursive !important;
+        color: maroon;
+        font-size: 22px;
+        font-weight: 500;
+      outline:none;
+      text-align: center !important;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+#donationFormContainer {
+    display: none;
+}
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    
+}
+
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#close-popup {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+/* Define the blink animation */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Apply the animation to the "blink-text" class */
+.blink-text {
+    color: red !important;
+    animation: blink 2s infinite; /* 2s is the duration, you can adjust it as needed */
+    text-decoration: none; /* Remove the underline */
+}
+
+
+    </style>
+  {{-- <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const showDonationForm = document.getElementById('showDonationForm');
+        const donationFormContainer = document.getElementById('donationFormContainer');
+        const closeSymbol = document.getElementById('closeSymbol');
+
+        showDonationForm.addEventListener('click', function(event) {
+            event.preventDefault();
+            donationFormContainer.style.display = 'block';
+        });
+
+        closeSymbol.addEventListener('click', function() {
+            donationFormContainer.style.display = 'none';
+        });
+    });
+</script> --}}
+
+<script>
+    function processPayment() {
+        // Simulate a payment process (replace with actual payment gateway integration)
+        alert('Payment processed successfully!');
+        
+        // You can submit the form data to your server here if needed
+        // document.getElementById('donation-form').submit();
+    }
+</script>
+<script>
+    function showCardPaymentForm() {
+        document.getElementById("donation-form").style.display = "none";
+        document.getElementById("card-payment-form").style.display = "block";
+    }
+
+    function processCardPayment() {
+        // Implement your payment processing logic here
+        alert("Processing card payment...");
+    }
+</script>
+
