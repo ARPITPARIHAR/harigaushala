@@ -2,11 +2,15 @@
     <div class="col-lg-6 m-auto wow slideInLeft" data-wow-duration="1.50s" style="visibility: visible; animation-name: slideInLeft;">
 
         <div class="about-content">
-            
-            <div class="about-title text-red-600 ml-6 text-5xl font-bold">
-                Our Mission and Vision
+            <br>
+         
+              
             </div>
-            
+            <div class="abt" style="margin-left:20px;">
+                <h2 class="sec-title" style="margin-bottom:0px;">Our Mission and Vision</h2>
+                <br>
+                <img src="img/flower.png" style="margin-left: 240px;">
+                <br>
             <p class="mb-8 text-justify font-medium" style="font-size: 24px;">
                 गौशाला  पिछले 40 वर्षों से निःस्वार्थ भाव से अनाथ गायों की सेवा कर रही है। हमारा मुख्य लक्ष्य है इन गायों के लिए एक पोषणशील और करुणापूरित वातावरण प्रदान करना, उनके कल्याण की सुनिश्चित करना,सहर्ष सेवा भाव से गौवंश को संवर्धित करना एवं सभी जीवों के प्रति संरक्षण और देखभाल के विचार को बढ़ावा देना। हमारा लक्ष्य है एक ऐसा आश्रय स्थापित करना जहां ये गायें वात्सल्य और हर्ष के साथ जीवन बिता सकें,
             </p>
@@ -17,9 +21,15 @@
             </p>
         </div>
     </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <div class="col-lg-6 mb-res-sm-8 wow slideInRight" data-wow-duration="1.50s" style="visibility: visible; animation-name: slideInRight;">
-        <div class="about-left-image">
+        <div class="about-left-image" style="margin-top:120px;">
             <img src="img/vm.png" alt="" class="w-2/3 mx-auto rounded-lg">
         </div>
     </div>
@@ -39,8 +49,76 @@
     <div class="container" ">
         <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.0s">
             <div class=" rounded-full px-4 py-2 text-2xl mb-3 inline-block" style="background-color: black; color:white;font-size:22px;border-radius:40px;width:220px;margin-right:50%;margin-left:40%;">Our Trustee</div>
-            <h2 class="text-3xl mb-5" style="color:purple;">Meet Our Trust Members</h2>
-        </div>
+            
+        <style>
+
+.sec-title{
+margin: 0 0 4px;
+    padding: 0;
+    font-size: 48px;
+    line-height: 40px;
+    color: #CB0000;
+    text-align: center;
+    font-family: 'Great Vibes';
+    font-weight: normal;
+    }
+
+    .abt {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: black 0 0px 15px -3px;
+    padding: 50px 30px 50px 30px;
+    border-radius: 15px;
+    background-color: white;
+}
+            .underline-animation {
+                position: relative;
+                display: inline-block;
+                color: purple !important;
+                text-decoration: none !important;
+            }
+        
+            .underline-animation::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 31px !important; /* Adjust the gap by changing the value here */
+                width: 100%;
+                height: 4px;
+                background-color: #06b3da !important; /* Your desired color */
+                transform-origin: 0 50%;
+            }
+        
+            .point {
+                position: absolute;
+                content: '';
+                width: 10px;
+                height: 10px;
+                background-color: #874b06 !important; /* Your desired color */
+                border-radius: 50%;
+                bottom: 27px !important;
+                left: 0;
+                animation: movePoint 2s linear infinite; /* Adjust the animation duration as needed */
+            }
+        
+            @keyframes movePoint {
+                0% {
+                    left: 0;
+                }
+                50% {
+                    left: 100%;
+                }
+                100% {
+                    left: 0;
+                }
+            }
+        </style>
+        
+        <a href="#" class="underline-animation">
+            <h2 class="text-3xl mb-5" style="color:purple;">Meet Our Trust Members <span class="point"></span></h2>
+        </a>
+        
+        <br>
         <div class="container">
             <div class="row g-4">
                 <div class="col-md-6">
@@ -117,11 +195,11 @@
                 <div class="team-item"  style="background-color: maroon; height: 400px;width:300px; border-radius:20px;">
                     <div class="full-name">
                       
-                        <h5 style="margin-top: 0; margin-bottom: 0.5rem; font-family: 'Inter', sans-serif; font-weight: 700; line-height: 1.2;  color:white;">Kanchan Devi Maru</h5>
+                        <h5 style="margin-top: 0; margin-bottom: 0.5rem; font-family: 'Inter', sans-serif; font-weight: 700; line-height: 1.2;  color:white;">somya</h5>
                         <p class="mb-4" style="color:white;">(Treasurer)</p>
                     </div>
                     <div class="circle">
-                        <img src="" alt="Team Member 1" id="team-member-image">
+                        <img class="img-fluid zoomable" <img src="img/a1.png" alt="Team Member 1" id="team-member-image">
                     </div>
                     {{-- <div class="d-flex justify-content-center">
                         <a class="btn btn-square text-primary bg-white m-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -175,16 +253,10 @@
               <div class="text-center" style="width: 290px; height: 260px; border-radius:50%;">
                 <img src="img/calf.jpg" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 60%; width: 80%; height: 80%; margin-left:20%;margin-right:50%;">
               </div>
-              
-             
-              
-
               <span class="bt-0 fw-bold text-dark mt-1" style="color: white !important; margin-left: 20px; font-size: 20px; position: absolute; bottom: 10px; left: 0;">₹1500</span>
             </div>
             <form class="float-end">
-               
-
-                <button class="nav-item nav-link donateBtn text-white" onclick="toggleDonationForm(0)" style="position: absolute; bottom: 10px; right: 10px;">Donate</button>
+             <button class="nav-item nav-link donateBtn text-white" onclick="toggleDonationForm(0)" style="position: absolute; bottom: 10px; right: 10px;">Donate</button>
             </form>
           </div>
         </div>
@@ -198,10 +270,6 @@
               <div class="text-center" style="width: 290px; height: 260px; border-radius:50%;">
                 <img src="img/calf.jpg" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 60%; width: 80%; height: 80%; margin-left:20%;margin-right:50%;">
               </div>
-              
-             
-              
-
               <span class="bt-0 fw-bold text-dark mt-1" style="color: white !important; margin-left: 20px; font-size: 20px; position: absolute; bottom: 10px; left: 0;">₹4500</span>
             </div>
             <form class="float-end">
@@ -218,10 +286,6 @@
               <div class="text-center" style="width: 290px; height: 260px; border-radius:50%;">
                 <img src="img/calf.jpg" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 60%; width: 80%; height: 80%; margin-left:20%;margin-right:50%;">
               </div>
-              
-             
-              
-
               <span class="bt-0 fw-bold text-dark mt-1" style="color: white !important; margin-left: 20px; font-size: 20px; position: absolute; bottom: 10px; left: 0;">₹18000</span>
             </div>
             <form class="float-end">
@@ -239,9 +303,6 @@
                 <img src="img/cowjpg.jpg" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 60%; width: 80%; height: 80%; margin-left:20%;margin-right:50%;">
               </div>
               
-             
-              
-
               <span class="bt-0 fw-bold text-dark mt-1" style="color: white !important; margin-left: 20px; font-size: 20px; position: absolute; bottom: 10px; left: 0;">₹3000</span>
             </div>
             <form class="float-end">
@@ -260,9 +321,6 @@
             <img src="img/cowjpg.jpg" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 60%; width: 80%; height: 80%; margin-left:20%;margin-right:50%;">
           </div>
           
-         
-          
-
           <span class="bt-0 fw-bold text-dark mt-1" style="color: white !important; margin-left: 20px; font-size: 20px; position: absolute; bottom: 10px; left: 0;">₹9000</span>
         </div>
         <form class="float-end">
@@ -281,9 +339,6 @@
             <img src="img/cowjpg.jpg" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 60%; width: 80%; height: 80%; margin-left:20%;margin-right:50%;">
           </div>
           
-         
-          
-
           <span class="bt-0 fw-bold text-dark mt-1" style="color: white !important; margin-left: 20px; font-size: 20px; position: absolute; bottom: 10px; left: 0;">₹36000</span>
         </div>
         <form class="float-end">
@@ -312,7 +367,7 @@
                
                     <div class="form-container">
                         <div class="absolute top-2 right-2 cursor-pointer"style="cursor: pointer;" onclick="closeDonationForm(1)">
-                            <span class="900 text-lg" style="color: yellow; float: right;">X</span>
+                            <span class="900 text-lg" style="color: black; float: right;">X</span>
                         </div>
                         
                         <br>
@@ -346,7 +401,7 @@
                
                     <div class="form-container">
                         <div class="absolute top-2 right-2 cursor-pointer" style="cursor: pointer;" onclick="closeDonationForm(2)">
-                            <span class="900 text-lg" style="color: yellow; float: right;">X</span>
+                            <span class="900 text-lg" style="color: black; float: right;">X</span>
                         </div><br>
               
                 <div class="don-text">
@@ -378,7 +433,7 @@
                
                     <div class="form-container">
                         <div class="absolute top-2 right-2 cursor-pointer"style="cursor: pointer;" onclick="closeDonationForm(3)">
-                            <span class="900 text-lg" style="color: yellow; float: right;">X</span>
+                            <span class="900 text-lg" style="color: black; float: right;">X</span>
                         </div><br>
               
              
@@ -411,8 +466,8 @@
                
                     <div class="form-container">
                         <div class="absolute top-2 right-2 cursor-pointer" style="cursor: pointer;" onclick="closeDonationForm(4)">
-                            <span class="900 text-lg" style="color: yellow; float: right;">X</span>
-                        </div>><br>
+                            <span class="900 text-lg" style="color: black; float: right;">X</span>
+                        </div><br>
                 
                 <div class="don-text">
                     <p>आप द्वारा एक माह के लिए एक गाय को गोद लिया जा रहा है,आप द्वारा प्रदत्त सहयोग राशि द्वारा एक माह हेतु गोद लिए गाय के चारा पोषण पूर्ति होगी। 
@@ -443,7 +498,7 @@
                
                     <div class="form-container">
                         <div class="absolute top-2 right-2 cursor-pointer" style="cursor: pointer;" onclick="closeDonationForm(5)">
-                            <span class="900 text-lg" style="color: yellow; float: right;">X</span>
+                            <span class="900 text-lg" style="color: black; float: right;">X</span>
                         </div>><br>
               
              
@@ -476,7 +531,7 @@
                
                     <div class="form-container">
                         <div class="absolute top-2 right-2 cursor-pointer" style="cursor: pointer;" onclick="closeDonationForm(6)">
-                            <span class="900 text-lg" style="color: yellow; float: right;">X</span>
+                            <span class="900 text-lg" style="color:black; float: right;">X</span>
                         </div><br>
               
                
@@ -508,373 +563,7 @@
 </div>
 </div>
 </div>
-
-   
-
-
-
-   <style>
-
-@keyframes bounceInUp {
-    0%, 60%, 75%, 90%, 100% {
-        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    }
-    0% {
-        opacity: 0;
-        transform: translateY(3000px);
-    }
-    60% {
-        opacity: 1;
-        transform: translateY(-20px);
-    }
-    75% {
-        transform: translateY(10px);
-    }
-    90% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-/* Apply the animation with the modified bounce effect */
-.wow.bounceInUp {
-    animation: bounceInUp 1s both;
-}
-
-.testimonial-item {
-    margin: 0 auto;
-    max-width: 600px;
-    text-align: center;
-    border: none !important; /* !important ka istemal border property ko forcefully remove karne ke liye kiya gaya hai */
-}
-
-
-.don-text{
-    color:white;
-    font-size: 22px;
-}
-    .form-container {
-       background-image: url(img/11.jpg);
-        width: 400px;
-        height: 580px;;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .form-container h2 {
-        text-align: center;
-        font-size: 24px;
-        color:white;
-    }
-
-    .form-container h3 {
-        font-size: 18px;
-        font-weight: bold;
-        color:skyblue;
-        margin-bottom: 10px;
-    }
-
-    .form-container label {
-        display: block;
-        margin-bottom: 6px;
-        color: white;
-    }
-
-    .form-container input[type="text"],
-    .form-container input[type="tel"] {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    .form-container button {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-     margin-left: 30%!important;
-    align-items: center!important;
-    }
-
-    .close-button {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-    }
-
-        
-        .center-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .donation-form {
-            max-width: 400px;
-            padding: 20px;
-           
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: none; /* Initially hidden */
-        }
-
-        /* Close button styles */
-        .close-button {
-            text-align: right;
-        }
-
-     
-
-   
-        .donate-form {
-            display: none; /* Initially hide the form */
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            z-index: 999;
-        }
-        .close-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-        }
-    
-.team-item:hover {
-    background-color: white;
-}
-
-.team-item .circle {
-    width: 300px;
-    height: 320px;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: background-color 0.3s;
-}
-
-.team-item:hover .circle {
-    background-color: white;
-}
-
-.team-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.team-item .full-name {
-    position: absolute;
-    bottom: 20px; /* Adjust the distance from the bottom as needed */
-    left: 0;
-    right: 0;
-    color: white;
-    transition: color 0.3s;
-}
-
-.team-item:hover .full-name {
-    color: maroon;
-}
-
-.full-name:hover h5,
-.full-name:hover p {
-    color: maroon!important;
-    background-color: white !important;
-}
-
-        #team-member-image {
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-#team-member-image:hover {
-    transform: scale(1.05); /* Scale up the image slightly on hover */
-    opacity: 0.8; /* Reduce opacity on hover for a subtle transparent effect */
-}
-
-       
-        .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
-            background-color: #69727d;
-            color: #fff;
-        }
-        .sticky-element {
-    width: 100%;
-    height: 100px; /* Aapke element ke liye appropriate height set karein */
-    background-color: #f0f0f0;
-    position: sticky;
-    top: 0;
-}
-/* CSS code */
-.said {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.said.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-.team-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-     /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the container horizontally */
-}
-
-.team-member {
-    flex: 1;
-    text-align: center !important;
-    position: relative;
-    /* Add padding for spacing */
-}
-
-.circle {
-    width: 300px; /* Circle width */
-    height: 300px; /* Circle height */
-    border-radius: 50%; /* Make it a circle */
-    overflow: hidden; 
-    margin: 0 auto; 
-}
-
-.circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    display: block;
-}
-.circle img:hover {
-    filter: brightness(1.0 ); 
-}
-
-.full-name{
-margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-family: "Inter",sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
-    color:#0E2E50;
-}
-.circle-img:hover h5,
-.circle-img:hover p {
-    color: maroon!important;
-}
-
-.circle:hover {
-    /* Hover state styles */
-    background-color: white!important;
-    color: maroon!important;
-}
-  .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
-            color: #69727d;
-            border: 3px solid;
-            background-color: transparent;
-        }
-
-        .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
-            margin-top: 8px;
-        }
-
-        .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
-            width: 1em;
-            height: 1em;
-        }
-
-        .elementor-widget-text-editor .elementor-drop-cap {
-            float: left;
-            text-align: center;
-            line-height: 1;
-            font-size: 50px;
-        }
-
-        .elementor-widget-text-editor .elementor-drop-cap-letter {
-            display: inline-block;
-        }
-        .said {
-            background-color:#540000;
-    border-radius: 120px 120px 120px 120px;
-   
-    height: 150px; /* Aapke requirement ke hisab se height set karein */
-    width: 100%; /* Screen width ke hisab se width set karein */
-    background-size: cover; /* Image ko cover karne ke liye */
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative; /* Parent container ko relative position dena zaroori hai */
-}
-
-.founder-text {
-    font-family: 'Lora',Georgia,"Times New Roman",serif;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 1.5em;
-    text-align: center;
-    color:pink;
-}
-.founder-text p {
-    margin-top: 10px; 
-    line-height: 1.5; 
-    font-size: 24px;
-    color:white;
-}
-
-  
-
-
-.about-title {
-    font-weight: 1700!important; 
-     color: #520102!important; 
-      margin-left:30px!important; 
-       font-size: 50px!important;
-       font-weight:bold!important; 
-      
-      
-
-    }
-    .about-content{
-    color:black;
-    text-align: justify;
-    font-weight: 500;
-    margin-bottom: 10px;
-    margin-left:30px!important;
-    }
-/* CSS for the "fade-in" animation */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-.faq.fade-in {
-  animation: fadeIn 2s ease both;
-}
-
-    </style>
-
-    
-    <section class="section faq fade-in">
+ <section class="section faq fade-in">
         <div class="container">
             
             <div class="row margin-bottom">
@@ -1039,37 +728,7 @@ margin-top: 0;
 </div>
 <!-- Testimonial End -->
 
-    <style>
-        .testimonial-item {
-    padding-top: -920px !important;
-}
-
-
-
-        .donate-form {
-            display: none; /* Initially hide the form */
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            z-index: 999;
-        }
-        .close-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-        }
-
-        
-h1.display-6:hover {
-    transform: scale(1.05);
-}
-    </style>
+  
 
     </div>
 
@@ -1175,8 +834,451 @@ h1.display-6:hover {
 </div>
 </div>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var donationForms = document.querySelectorAll('.donation-form');
+        var lastClickedButton = null;
 
-<style>
+        function toggleDonationForm(event, formIndex) {
+            event.preventDefault();
+            var donationForm = donationForms[formIndex];
+
+            if (donationForm.style.display === 'none' || donationForm.style.display === '') {
+                donationForm.style.display = 'block';
+                donationForm.style.position = 'fixed';
+                centerDonationForm(donationForm);
+                lastClickedButton = event.target;
+            } else {
+                donationForm.style.display = 'none';
+            }
+        }
+
+        function closeDonationForm(formIndex) {
+            donationForms[formIndex].style.display = 'none';
+        }
+
+        function centerDonationForm(form) {
+            var windowWidth = window.innerWidth;
+            var windowHeight = window.innerHeight;
+            var formWidth = form.offsetWidth;
+            var formHeight = form.offsetHeight;
+
+            var left = (windowWidth - formWidth) / 2 + 'px';
+            var top = (windowHeight - formHeight) / 2 + 'px';
+
+            form.style.left = left;
+            form.style.top = top;
+        }
+
+        var donateButtons = document.querySelectorAll('.donateBtn');
+        donateButtons.forEach(function (button, index) {
+            button.addEventListener('click', function (event) {
+                toggleDonationForm(event, index);
+            });
+        });
+
+        var closeButtons = document.querySelectorAll('.close-button');
+        closeButtons.forEach(function (closeButton, index) {
+            closeButton.addEventListener('click', function (event) {
+                closeDonationForm(index);
+            });
+        });
+
+        document.addEventListener('click', function (event) {
+            if (lastClickedButton !== event.target && lastClickedButton !== null) {
+                var formIndex = parseInt(lastClickedButton.getAttribute('data-form-index'));
+                closeDonationForm(formIndex);
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+<script>
+    var video = document.getElementById('videoPlayer');
+    var seekSlider = document.getElementById('seekSlider');
+    
+    video.addEventListener('timeupdate', function() {
+      seekSlider.value = video.currentTime;
+    });
+    
+    seekSlider.addEventListener('input', function() {
+      video.currentTime = seekSlider.value;
+    });
+  </script>
+  
+  <style>
+
+    @keyframes bounceInUp {
+        0%, 60%, 75%, 90%, 100% {
+            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+        0% {
+            opacity: 0;
+            transform: translateY(3000px);
+        }
+        60% {
+            opacity: 1;
+            transform: translateY(-20px);
+        }
+        75% {
+            transform: translateY(10px);
+        }
+        90% {
+            transform: translateY(-5px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    
+    .wow.bounceInUp {
+        animation: bounceInUp 1s both;
+    }
+    
+    .testimonial-item {
+        margin: 0 auto;
+        max-width: 600px;
+        text-align: center;
+        border: none !important; /* !important ka istemal border property ko forcefully remove karne ke liye kiya gaya hai */
+    }
+    
+    
+    .don-text{
+        color:black;
+        font-size: 22px;
+    }
+        .form-container {
+            background: linear-gradient(0deg,#87de1d,#b4e900);
+            width: 400px;
+            height: 580px;;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .form-container h2 {
+            text-align: center;
+            font-size: 24px;
+            color:white;
+        }
+    
+        .form-container h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color:skyblue;
+            margin-bottom: 10px;
+        }
+    
+        .form-container label {
+            display: block;
+            margin-bottom: 6px;
+            color: black;
+        }
+    
+        .form-container input[type="text"],
+        .form-container input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    
+        .form-container button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+         margin-left: 30%!important;
+        align-items: center!important;
+        }
+    
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    
+            
+            .center-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+    
+            .donation-form {
+                max-width: 400px;
+                padding: 20px;
+               
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                display: none; /* Initially hidden */
+            }
+    
+            /* Close button styles */
+            .close-button {
+                text-align: right;
+            }
+    
+         
+    
+       
+            .donate-form {
+                display: none; /* Initially hide the form */
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                z-index: 999;
+            }
+            .close-button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                cursor: pointer;
+            }
+        
+    .team-item:hover {
+        background-color: white;
+    }
+    
+    .team-item .circle {
+        width: 300px;
+        height: 320px;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: background-color 0.3s;
+    }
+    
+    .team-item:hover .circle {
+        background-color: white;
+    }
+    
+    .team-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    .team-item .full-name {
+        position: absolute;
+        bottom: 20px; /* Adjust the distance from the bottom as needed */
+        left: 0;
+        right: 0;
+        color: white;
+        transition: color 0.3s;
+    }
+    
+    .team-item:hover .full-name {
+        color: maroon;
+    }
+    
+    .full-name:hover h5,
+    .full-name:hover p {
+        color: maroon!important;
+        background-color: white !important;
+    }
+    
+            #team-member-image {
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    
+    #team-member-image:hover {
+        transform: scale(1.05); /* Scale up the image slightly on hover */
+        opacity: 0.8; /* Reduce opacity on hover for a subtle transparent effect */
+    }
+    
+           
+            .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+                background-color: #69727d;
+                color: #fff;
+            }
+            .sticky-element {
+        width: 100%;
+        height: 100px; /* Aapke element ke liye appropriate height set karein */
+        background-color: #f0f0f0;
+        position: sticky;
+        top: 0;
+    }
+    /* CSS code */
+    .said {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .said.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    
+    .team-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+         /* Adjust the maximum width as needed */
+        margin: 0 auto; /* Center the container horizontally */
+    }
+    
+    .team-member {
+        flex: 1;
+        text-align: center !important;
+        position: relative;
+        /* Add padding for spacing */
+    }
+    
+    .circle {
+        width: 300px; /* Circle width */
+        height: 300px; /* Circle height */
+        border-radius: 50%; /* Make it a circle */
+        overflow: hidden; 
+        margin: 0 auto; 
+    }
+    
+    .circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        display: block;
+    }
+    .circle img:hover {
+        filter: brightness(1.0 ); 
+    }
+    
+    .full-name{
+    margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-family: "Inter",sans-serif;
+        font-weight: 700;
+        line-height: 1.2;
+        color:#0E2E50;
+    }
+    .circle-img:hover h5,
+    .circle-img:hover p {
+        color: maroon!important;
+    }
+    
+    .circle:hover {
+        /* Hover state styles */
+        background-color: white!important;
+        color: maroon!important;
+    }
+      .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+                color: #69727d;
+                border: 3px solid;
+                background-color: transparent;
+            }
+    
+            .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+                margin-top: 8px;
+            }
+    
+            .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+                width: 1em;
+                height: 1em;
+            }
+    
+            .elementor-widget-text-editor .elementor-drop-cap {
+                float: left;
+                text-align: center;
+                line-height: 1;
+                font-size: 50px;
+            }
+    
+            .elementor-widget-text-editor .elementor-drop-cap-letter {
+                display: inline-block;
+            }
+            .said {
+                background-color:#540000;
+        border-radius: 120px 120px 120px 120px;
+       
+        height: 150px; /* Aapke requirement ke hisab se height set karein */
+        width: 100%; /* Screen width ke hisab se width set karein */
+        background-size: cover; /* Image ko cover karne ke liye */
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative; /* Parent container ko relative position dena zaroori hai */
+    }
+    
+    .founder-text {
+        font-family: 'Lora',Georgia,"Times New Roman",serif;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 1.5em;
+        text-align: center;
+        color:pink;
+    }
+    .founder-text p {
+        margin-top: 10px; 
+        line-height: 1.5; 
+        font-size: 24px;
+        color:white;
+    }
+    
+    
+        .zoomable {
+            transition: transform 0.3s ease-in-out;
+        }
+    
+        .zoomable:hover {
+            transform: scale(1.1); /* Adjust the scaling factor as needed */
+        }
+    
+    
+    
+    .about-title {
+        font-weight: 1700!important; 
+         color: #520102!important; 
+          margin-left:30px!important; 
+           font-size: 50px!important;
+           font-weight:bold!important; 
+          
+          
+    
+        }
+        .about-content{
+        color:black;
+        text-align: justify;
+        font-weight: 500;
+        margin-bottom: 10px;
+        margin-left:30px!important;
+        }
+    /* CSS for the "fade-in" animation */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      60% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    
+    .faq.fade-in {
+      animation: fadeIn 2s ease both;
+    }
+    
+  
 #movingText {
     color: white; 
     white-space: nowrap; 
@@ -1535,99 +1637,47 @@ background-color: linear-gradient(0deg, rgba(255, 255, 255, 0.018) 0%, rgba(255,
     animation: blink 2s infinite; 
     text-decoration: none; 
 }
-</style>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const accordionTitles = document.querySelectorAll(".accordion__title-block");
 
-        accordionTitles.forEach(title => {
-            title.addEventListener("click", function() {
-                this.classList.toggle("accordion__open");
-                const accordionText = this.nextElementSibling;
-                if (accordionText.style.display === "block") {
-                    accordionText.style.display = "none";
-                } else {
-                    accordionText.style.display = "block";
-                }
+
+        .testimonial-item {
+    padding-top: -920px !important;
+}
+
+
+
+        .donate-form {
+            display: none; /* Initially hide the form */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        
+h1.display-6:hover {
+    transform: scale(1.05);
+}
+              
+             
+    
+        </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".accordion__title-block").click(function(){
+                $(this).next(".accordion__text-block").slideToggle();
             });
         });
-    });
-</script>
-<script>
-
-var donationForms = document.querySelectorAll('[id^="donationForm"]');
-var lastClickedButton = null;
-
-function toggleDonationForm(event, formIndex) {
-    event.preventDefault();
-    var donationForm = donationForms[formIndex];
-
-    if (donationForm.style.display === "none" || donationForm.style.display === "") {
-        donationForm.style.display = "block";
-        donationForm.style.position = "fixed";
-        centerDonationForm(donationForm);
-        lastClickedButton = event.target;
-    } else {
-        donationForm.style.display = "none";
-    }
-}
-
-function closeDonationForm(formIndex) {
-    donationForms[formIndex].style.display = "none";
-}
-
-function centerDonationForm(form) {
-    var windowWidth = window.innerWidth;
-    var windowHeight = window.innerHeight;
-    var formWidth = form.offsetWidth;
-    var formHeight = form.offsetHeight;
-
-    var left = (windowWidth - formWidth) / 2 + "px";
-    var top = (windowHeight - formHeight) / 2 + "px";
-
-    form.style.left = left;
-    form.style.top = top;
-}
-
-
-var donateButtons = document.querySelectorAll(".donateBtn");
-donateButtons.forEach(function(button, index) {
-    button.addEventListener("click", function(event) {
-        toggleDonationForm(event, index);
-    });
-});
-
-
-var closeButtons = document.querySelectorAll(".form-container .close-button");
-closeButtons.forEach(function(closeButton, index) {
-    closeButton.addEventListener("click", function(event) {
-        closeDonationForm(index);
-    });
-});
-
-
-document.addEventListener("click", function(event) {
-    if (lastClickedButton !== event.target && lastClickedButton !== null) {
-        var formIndex = parseInt(lastClickedButton.getAttribute("data-form-index"));
-        closeDonationForm(formIndex);
-    }
-});
-</script>
-
-
-
-
-
-<script>
-    var video = document.getElementById('videoPlayer');
-    var seekSlider = document.getElementById('seekSlider');
+    </script>
     
-    video.addEventListener('timeupdate', function() {
-      seekSlider.value = video.currentTime;
-    });
-    
-    seekSlider.addEventListener('input', function() {
-      video.currentTime = seekSlider.value;
-    });
-  </script>
-  

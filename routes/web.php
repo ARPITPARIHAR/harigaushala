@@ -13,7 +13,8 @@ Route::get('/', [HomeController::class, 'create']);
 Route::get('contact', [HomeController::class, 'contact']);
 Route::get('founder', [HomeController::class, 'founder']);
 Route::get('about', [HomeController::class, 'about']);
-
+Route::get('gallery', [HomeController::class, 'gallery']);
+Route::post('/get-comment', [HomeController::class, 'getComment'])->name('get-comment');
 Route::get('/captcha/image', [CaptchaController::class, 'generateCaptcha'])->name('captcha.image');
 
 

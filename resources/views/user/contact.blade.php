@@ -2,17 +2,14 @@
 @section('meta_title','game')
 
 @include('user.includes.navbar')
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 
 
 
 <div class="elementor-widget-container" style="background-color: #540000; margin-left:px; margin-right: 0px; border-radius:;">
     <div class="form-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background-color:#540000;margin-left:10px;">
-    
-   
-    
-    
-    
+  
 <div id="trx_sc_title_460236106" class="sc_title sc_title_default">
     <div class="elementor-element elementor-element-4d86e9a elementor-widget__width-auto sc_fly_static elementor-widget elementor-widget-shortcode animated fadeInRight" data-id="4d86e9a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="shortcode.default">
     <span class="sc_item_subtitle sc_title_subtitle sc_align_center sc_item_subtitle_above sc_item_title_style_default" style="color:#FFE4B5;">Welcome YOU</span>
@@ -75,15 +72,8 @@
                     <label for="feedback">Any Message</label>
                     <input type="text" id="feedback" name="feedback" style="height: 60px;">
                 </div>
-                
-                <div class="form-row">
-                    <label for="captcha">Enter the Captcha</label>
-                    <div id="captcha-container"></div> <!-- Container for reCAPTCHA -->
-                </div>
-                
-                
+             
             
-               
             <div class="gform_footer top_label" style="text-align: center;">
                 <input type="submit" id="gform_submit_button_10" class="gform_button button" value="Submit" 
                 style="color: #ffffff; background-color: #db4242; font-size: 1.5em; width: 150px; height: 70px; margin: 0 auto; border-radius: 15px;">
@@ -98,25 +88,6 @@
 <!-- Add the reCAPTCHA script with async defer attributes -->
 <!-- Add the reCAPTCHA v3 script with async defer attributes -->
 <script src="https://www.google.com/recaptcha/api.js?render=your-site-key" async defer></script>
-
-
-<script>
-   
-    window.addEventListener('load', function() {
-        loadCaptcha();
-    });
-
-    function loadCaptcha() {
-        
-        grecaptcha.render('captcha-container', {
-            'sitekey': '{{ config('captcha.sitekey') }}',
-        });
-    }
-</script>
-
-
-
-
 
 </div>
 <p style="display: none !important;"><label>Δ<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" class="fill_inited"></textarea></label><input type="hidden" id="ak_js_2" name="ak_js" value="1694153248958"><script>document.getElementById( "ak_js_2" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>
@@ -377,3 +348,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     text-decoration: none; /* Remove the underline */
 }
 </style>
+<script>
+   
+    window.addEventListener('load', function() {
+        loadCaptcha();
+    });
+
+    function loadCaptcha() {
+        
+        grecaptcha.render('captcha-container', {
+            'sitekey': '{{ config('captcha.sitekey') }}',
+        });
+    }
+</script>

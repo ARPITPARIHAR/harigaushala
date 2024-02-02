@@ -28,4 +28,17 @@ public function about(){
     
 }
 
+
+public function gallery(){
+    return view('user.gallery');
+
+    
+}
+
+
+public function getComment()
+    {
+        return view('partials.comment-modal-body');
+    }
+
 }

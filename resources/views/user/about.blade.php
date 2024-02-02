@@ -11,7 +11,7 @@
 
 <div class="about-us-container">
     <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay="1.5s" style=" visibility: visible; animation-delay: 1.3s; animation-name: fadeIn;">
-    <div class="about-us-heading" style="font-size:48px; font-family:Arial, Helvetica, sans-serif;">About Shree Hari Pinjra Pirol Gaushala</div>
+    <div class="about-us-heading" style="font-size:48px; font-family:Arial, Helvetica, sans-serif;">About ShRee HaRi Pinjra PiRol GauShala</div>
     <img src="img/top.png" alt="Description of the image">
     <br>
     <p class="about-us-paragraph">
@@ -36,132 +36,22 @@
 <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="1.1s">
 <div class="get-involved">
 
-    <h2 class="get-involved-heading">Get Involved</h2>
+    <h1 class="get-involved-heading">Get Involved</h1>
     <ul class="get-involved-list">
-        <li><a href="">Donate</a> to support our mission.</li>
-        <li><a href="">Volunteer</a> help care for our cows.</li>
-        <li>Spread the word about our Gaushala and its importance in our culture.</li>
+        <li style="font-size:24px;"><a href="">Donate</a> To support our mission.</li>
+        <li style="font-size:24px;"><a href="">Volunteer</a> Help care for cows.</li>
+        <li style="font-size:24px;">Spread the word about our Gaushala and its importance in our culture.</li>
     </ul>
 </div>
 </div>
 </div>
-<style>
-.about-us-container {
-            background-color:rgba(1, 72, 172, 0.886);; /* Light gray background */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-            margin-top: -150px;/* Shadow effect */
-        }
 
-        /* Style the heading for the "About Us" section */
-        .about-us-heading {
-            font-size: 28px;
-            color:rgb(208, 255, 0); /* Dark gray text color */
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        /* Style the paragraph text within the "About Us" content */
-        .about-us-paragraph {
-            font-size: 18px;
-            line-height: 1.6;
-            color:white; /* Slightly darker gray text color */
-        }
-
-        .about-us-paragraph:hover {
-    color:black; /* Change the text color to red on hover */
-}
-
-
-
-
-
-        .get-involved {
-            background-color:lightcoral; /* White background */
-            padding: 20px;
-            margin-top: 20px; /* Add some spacing from the "About Us" section */
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-        }
-
-        /* Style the "Get Involved" heading */
-        .get-involved-heading {
-            font-size: 24px;
-            color: #1531acb3; /* Dark gray text color */
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        /* Style the list items within the "Get Involved" section */
-        .get-involved-list {
-            list-style-type: disc; /* Use bullet points for the list */
-            padding-left: 20px;
-            color:black;
-            font-size: 18px;
-             /* Add some left margin for the list items */
-        }
-
-     
-        .get-involved-list a {
-            color:white; /* Blue link color */
-            text-decoration: underline; 
-           
-        }
-
-
-        .marker {
-            text-align: center
-        }
-
-
-
-
-
-    .about {
-        
-        background-image: url('img/ab1221.jpg');
-        background-size: 100% 300px;
-        background-repeat: no-repeat;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 500px;
-    }
-
-    .content {
-        padding: 40px;
-        text-align: center;
-    }
-
-    .about-text {
-        font-size: 80px;
-        color: red; /* Set the text color for "about" to red */
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .us-text {
-        font-size: 80px;
-        color: #FFFF00; /* Set the text color for "US" to yellow (#FFFF00) */
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-
-    /* Reset some default styles for consistency */
-
-/* Style the About Us section */
-
-
-</style>
 <div class="donation-slider-wrapper">
     <div class="donation-form-container" style="height:1500px;"    id="donationFormContainer">
         <div class="close-symbol" id="closeSymbol">&times;</div>
         <h3 class="donation-form-header" style="color:black";>Make a Donation</h3>
         <div class="gaushala-name">
-            <h4 class="attractive-text" style="color:#8B0000 !important;margin-left:80px!important;">Shree Hari Pinjara Pol Gaushala</h4>
+            <h4 class="attractive-text" style="color:#8B0000 !important;margin-left:80px!important;">ShRee HaRi Pinjara Pol GauShala</h4>
         </div>
         <div class="container">
             <form id="donation-form" action="{{ route('razorpay.create') }}" method="POST">
@@ -199,7 +89,7 @@
 </div>
 </div>
 
-<!-- Your HTML content above this line -->
+
 
 
 </body>
@@ -217,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log('donationFormContainer:', donationFormContainer);
         console.log('closeSymbol:', closeSymbol);
 
-        // rest of your script
+        
     }
 });
 </script>
@@ -238,11 +128,10 @@ document.getElementById('close-popup').addEventListener('click', function() {
 </script>
 <script>
     function processPayment() {
-        // Simulate a payment process (replace with actual payment gateway integration)
+      
         alert('Payment processed successfully!');
         
-        // You can submit the form data to your server here if needed
-        // document.getElementById('donation-form').submit();
+      
     }
 </script>
 <script>
@@ -256,7 +145,118 @@ document.getElementById('close-popup').addEventListener('click', function() {
         alert("Processing card payment...");
     }
 </script>
-
+<style>
+    .about-us-container {
+                background-color:rgba(1, 72, 172, 0.886);; /* Light gray background */
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+                margin-top: -150px;/* Shadow effect */
+            }
+    
+            /* Style the heading for the "About Us" section */
+            .about-us-heading {
+                font-size: 28px;
+                color:rgb(208, 255, 0); /* Dark gray text color */
+                text-align: center;
+                margin-bottom: 20px;
+            }
+    
+            /* Style the paragraph text within the "About Us" content */
+            .about-us-paragraph {
+                font-size: 20px;
+                line-height: 1.6;
+                color:white;
+                font-family: cursive; /* Slightly darker gray text color */
+            }
+    
+            .about-us-paragraph:hover {
+        color:black; /* Change the text color to red on hover */
+    }
+    
+    
+    
+    
+    
+            .get-involved {
+                background-color:lightcoral; /* White background */
+                padding: 20px;
+                margin-top: 20px; /* Add some spacing from the "About Us" section */
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            }
+    
+            /* Style the "Get Involved" heading */
+            .get-involved-heading {
+                font-size: 24px;
+                color: #1531acb3; /* Dark gray text color */
+                text-align: center;
+                margin-bottom: 20px;
+            }
+    
+            /* Style the list items within the "Get Involved" section */
+            .get-involved-list {
+                list-style-type: disc; /* Use bullet points for the list */
+                padding-left: 20px;
+                color:black;
+                font-size: 18px;
+                 /* Add some left margin for the list items */
+            }
+    
+         
+            .get-involved-list a {
+                color:white; /* Blue link color */
+                text-decoration: underline; 
+               
+            }
+    
+    
+            .marker {
+                text-align: center
+            }
+    
+    
+    
+    
+    
+        .about {
+            
+            background-image: url('img/ab1221.jpg');
+            background-size: 100% 300px;
+            background-repeat: no-repeat;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+        }
+    
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+    
+        .about-text {
+            font-size: 80px;
+            color: red; /* Set the text color for "about" to red */
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+        .us-text {
+            font-size: 80px;
+            color: #FFFF00; /* Set the text color for "US" to yellow (#FFFF00) */
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+    
+        /* Reset some default styles for consistency */
+    
+    /* Style the About Us section */
+    
+    
+    </style>
 
 
  

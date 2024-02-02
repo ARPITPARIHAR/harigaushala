@@ -7,47 +7,35 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-
-   
-
-
-   
-
-
-  
-
-
-
+    <link rel="stylesheet" type="text/css" href="{{ ('css/style.css') }}">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-   
-                
-                 
-                {{-- <img class="mk-desktop-logo light-logo" alt="Shree Krishna Gaushala" src="https://shreekrishnagaushala.com/wp-content/uploads/2016/09/logo_gaushala.png"> --}}
-                <div class="mk-header d-flex align-items-center justify-content-center">
+     {{-- <img class="mk-desktop-logo light-logo" alt="Shree Krishna Gaushala" src="https://shreekrishnagaushala.com/wp-content/uploads/2016/09/logo_gaushala.png"> --}}
+     <div class="mk-header d-flex align-items-center justify-content-center" style="margin-right: 0 !important;">
+    
+    
+
                     <div class="logo-container">
                         <img class="mk-desktop-logo dark-logo rounded-circle" alt="Shree Krishna Gaushala" src="img/cow.jpg">
                     </div>
-                    
-                    
-                    <div class="name text-center" ><h5 class="blink-text"style="color:red!important;">SINCE - 1980</h5>
-                        <h3 style="font-size: 55px; color:#520102; font-family: sans-serif;">SHRI HARI PINJARA POL GAUSHALA</h3>
+                    <div class="name text-center" ><h5 class="blink-text"style="color:#043e43!important;">SINCE - 1980</h5>
+                        <h3 style="font-size: 55px; color:#520102; font-family:initial;">SHRI HARI PINJARA POL GAUSHALA</h3>
                         <div class="founder-info">
                             <p class="founder-name">Founder: Ratan Lal Parihar</p>
                         </div>
-                        
-                        <span class="registration-number" style="color:black"><strong> Registration No : 164/98 </strong></span>
+                    <span class="registration-number" style="color:black"><strong> Registration No : 164/98 </strong></span>
                     </div>
                 </div>
                 
-                
+  
             
     </header>
     
     
  
-    <div class="container-fluid sticky-top" style="background-color: 	#8B0000!important;">
+    <div class="container-fluid sticky-top" style="background-color:#8B0000!important;">
     
         <div class="container">
             <nav class="navbar navbar-expand-lg py-2 py-lg-0" style="background-color:	#8B0000 !important;">
@@ -66,77 +54,176 @@
                         <a href="/" class="nav-item nav-link text-white">Home</a>
                         <a href="founder" class="nav-item nav-link text-white">Founder Message</a>
                         <a href="about" class="nav-item nav-link text-white">About Us</a>
-                        <a href="razorpay" class="nav-item nav-link text-white">Gallery</a>
+                        <a href="gallery" class="nav-item nav-link text-white">Gallery</a>
                         <a href="product.html" class="nav-item nav-link text-white">Our Activities</a>
                         <a href="contact" class="nav-item nav-link text-white">Contact Us</a>
                     </div>
                 </div>
-                <a href="#" class="nav-item nav-link donateBtn text-white" id="showDonationForm">
+                
+                <a href="#" onclick="openCommentModal()"  class="nav-item nav-link donateBtn text-white" >
                     <span>Donate</span>
                 </a>
+               
             </nav>
         </div>
     </div>
    
-
-
-    <div class="donation-slider-wrapper">
-    <div class="donation-form-container" style="height:1500px;"    id="donationFormContainer">
-        <div class="close-symbol" id="closeSymbol">&times;</div>
-        <h3 class="donation-form-header" style="color:black";>Make a Donation</h3>
-        <div class="gaushala-name">
-            <h4 class="attractive-text" style="color:#8B0000 !important;margin-left:80px!important;">Shree Hari Pinjara Pol Gaushala</h4>
-        </div>
-        <div class="container">
-            <form id="donation-form" action="{{ route('razorpay.create') }}" method="POST">
-                @csrf 
-            <form id="donation-form">
-                <div class="form-group">
-                    <label for="full-name" > Full Name</label>
-                    <input type="text" id="full-name" class="form-control" style="background-color:black; color: white !important;border-radius:10px;" required>
-                </div>
-                <div class="form-group">
-                    <label for="mobile-number">Mobile Number</label>
-                    <input type="tel" id="mobile-number" class="form-control" style="background-color:black; color: white !important;border-radius:10px;" required>
-                </div>
-                <div class="form-group">
-                    <label for="home-address">Home Address</label>
-                    <textarea id="home-address" class="form-control" style="background-color:black; color: white !important; border-radius:10px;" rows="3" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="pan-number">Donation Amount</label>
-                    <input type="text" id="pan-number" class="form-control" style="background-color: black; color: white !important; border-radius:10px;text-align:center;" required>
-                </div>
-       
-                    <button type="submit" class="btn btn-primary" id="proceed-to-pay-button">
-                        Proceed to Pay
-                    </button>
-                </div>
-                
-                
-            </form>
-    
+    <div class="modal fade" id="comment-modal" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" >
+                 <div class="modal-header">
+                    <form id="donation-form"style="width:100%;" action="{{ route('razorpay.create') }}" method="POST">
+                        @csrf <div class="callout" data-closable>
+                            <span class="close-button" aria-label="Close alert" onclick="closeCallout()">
+                                <span aria-hidden="true">&times;</span>
+                            </span>
+                        </div>
+                        <h2 class="donation-form-header" style="color: #a83535; font-family: 'salmon'; font-size:34px;margin-top:-30px;">Make a Donation</h2> 
+                        
+                    <form id="donation-form" >
+                        <div class="form-group">
+                            <label for="full-name" > Full Name</label>
+                            <input type="text" id="full-name" class="form-control" style="background-color:black; color: white !important;border-radius:10px;" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile-number">Mobile Number</label>
+                            <input type="tel" id="mobile-number" class="form-control" style="background-color:black; color: white !important;border-radius:10px;" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="home-address">Home Address</label>
+                            <textarea id="home-address" class="form-control" style="background-color:black; color: white !important; border-radius:10px;" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="pan-number">Donation Amount</label>
+                            <input type="text" id="pan-number" class="form-control" style="background-color: black; color: white !important; border-radius:10px;text-align:center;" required>
+                        </div>
+               
+                            <button type="submit" class="btn btn-primary" id="proceed-to-pay-button">
+                                Proceed to Pay
+                            </button>
+                        </div>
+                        
+                        
+                    </form>
             
-            </form>
+                    
+                    </form>   
+                    
+                </div>
+                <div class="modal-body" id="comment-modal-body">
+                    
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
 
+    <style>
+   
+    </style>
+    
+    <script>
+        function openCommentModal() {
+            var id = 1; 
+            $('#comment-modal-body').html(null);
+            $.post("{{ route('get-comment') }}", {
+                _token: '{{ csrf_token() }}',
+                id: id
+            }, function(data) {
+                $('#comment-modal').modal('show');
+                $('#comment-modal-body').html(data);
+            });
+        }
+    </script>
+    
+    <script>
+        function closeModal() {
+            $('#ajaxModelexa').modal('hide');
+        }
+    </script>
+    
+    <style>
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+        .callout {
+            position: relative;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            /* border: 1px solid #bd1717; */
+            border-radius: 5px;
+        }
+    
+        /* Remove blur effect styles */
+        .modal-backdrop {
+            display: none !important;
+        }
+    
+        .close-button {
+            position: absolute;
+            top: -500;
+            right: 0;
+            padding: 0.5;
+            cursor: pointer;
+            font-size: 24px;
+        }
+    </style>
+    
+    <script>
+        function closeModalAndCallout() {
+            // Close the modal
+            var modal = document.getElementById('comment-modal');
+            modal.style.display = 'none';
+    
+            // Close the callout
+            var callout = document.querySelector('.callout');
+            callout.style.display = 'none';
+        }
+    </script>
+    
+    <script>
+        function closeCallout() {
+            // Close the modal
+            $('#comment-modal').modal('hide');
+    
+            // Optionally, you can remove the modal backdrop
+            // $('.modal-backdrop').remove();
+        }
+    </script>
+    
+    <script>
+        $(document).ready(function () {
+            $('#comment-modal').modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+    
+            // Function to close the modal
+            function closeModal() {
+                $('#comment-modal').modal('hide');
+            }
+    
+            // Attach the closeModal function to the close button
+            $('.close-button').on('click', closeModal);
+        });
+    </script>
+    
+    
     
 
     <script>
         // JavaScript code
         let selectedDonation = 0;
 
-        // Function to set the selected donation amount
+       
         function setDonationAmount(amount) {
             selectedDonation = amount;
             displaySelectedAmount(); // Update selected donation amount display
         }
 
-        // Function to display the selected donation amount
         function displaySelectedAmount() {
             let selectedAmountContainer = document.getElementById('selected-amount-container');
             selectedAmountContainer.innerHTML = `Selected Donation Amount: $${selectedDonation}`;
@@ -148,8 +235,37 @@
     
     <style>
 
+ #donation-form label {
+       color:#013f57;
+    }
+
+
+
 .preloader {
     display: none;
+}
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #056b71; /* Set your preferred color */
+  font-family: 'Arial', sans-serif; /* Set your preferred font-family */
+  transition: color 0.3s ease;
+  * Add a color transition effect */
+}
+
+.close-icon:hover {
+  color: #ff5555; /* Change color on hover */
+}
+/* CSS for styling form label */
+.label {
+  color:black; /* Set your preferred color for labels */
+  font-size: 16px; /* Set your preferred font size */
+  font-weight: bold; /* Set your preferred font weight */
+  margin-bottom: 8px; /* Set margin as needed for spacing */
+  display: block; /* Ensures labels are on a new line */
 }
 
 
@@ -223,9 +339,7 @@ height:200px;
     width: 100%;
     height: 100%;
 }
-.donation-slider-wrapper {
-            position: relative;
-        }
+
        
         .navbar-toggler {
     display: flex!important;
@@ -275,30 +389,23 @@ height:200px;
         }
 
         .donation-form-container {
-    position: fixed;
-    /* Adjust this value to control how much space you want from the top */
-    margin-top:480px; /* Adjust this value to add margin from the top */
+    position:relative;
+    margin-top:480px; 
     left: 60%;
-    margin-bottom:80px; 
+    margin-bottom:880px; 
     width: 40%;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100;%)
   
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
 #scrollable-container {
-    max-height: 200px; /* Adjust the max height as needed */
-    margin-top: 20px; /* Adjust the margin as needed to create space between the form and the button */
+    max-height: 200px;
+    margin-top: 20px; 
 }
 
 
-/* Add margin to the right side of the form */
-.donation-form-container {
-     /* Adjust this value as needed */
-}
-
-/* Style the "Proceed to Pay" button */
 #proceed-to-pay-button {
     display: block;
     margin: 20px auto; /* Adjust this value as needed */
@@ -405,23 +512,47 @@ textarea.form-control {
     border-radius: 5px;
     margin-top: 10px;
 }
-/* Define the blink animation */
+
 @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
 
-/* Apply the animation to the "blink-text" class */
+
 .blink-text {
     color: red !important;
     animation: blink 2s infinite; /* 2s is the duration, you can adjust it as needed */
     text-decoration: none; /* Remove the underline */
 }
+.sticky-top {
+    position: sticky;
+    top: 0;
+    
+}
+
+.donation-form-container {
+    position: fixed;
+     margin-bottom: 100px;
+}
+.navbar-nav {
+    margin-right: 0 !important; /* Set the right margin to 0 */
+}
+
+/* Adjust the close button in the navbar */
+.navbar-toggler {
+    position: absolute !important;
+    right: 0 !important;
+    transform: translateX(0) !important;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
 
 
     </style>
-  {{-- <script>
+  <script>
     document.addEventListener("DOMContentLoaded", function() {
         const showDonationForm = document.getElementById('showDonationForm');
         const donationFormContainer = document.getElementById('donationFormContainer');
@@ -436,15 +567,14 @@ textarea.form-control {
             donationFormContainer.style.display = 'none';
         });
     });
-</script> --}}
+</script> 
 
 <script>
     function processPayment() {
-        // Simulate a payment process (replace with actual payment gateway integration)
+       
         alert('Payment processed successfully!');
         
-        // You can submit the form data to your server here if needed
-        // document.getElementById('donation-form').submit();
+       
     }
 </script>
 <script>
@@ -454,8 +584,34 @@ textarea.form-control {
     }
 
     function processCardPayment() {
-        // Implement your payment processing logic here
+       
         alert("Processing card payment...");
     }
 </script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const closeSymbol = document.getElementById('closeSymbol');
+        const donationFormContainer = document.getElementById('donationFormContainer');
+
+        closeSymbol.addEventListener('click', function() {
+            donationFormContainer.style.display = 'none';
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const showDonationForm = document.getElementById('showDonationForm');
+        const donationFormContainer = document.getElementById('donationFormContainer');
+        const closeSymbol = document.getElementById('closeSymbol');
+
+        showDonationForm.addEventListener('click', function (event) {
+            event.preventDefault();
+            donationFormContainer.style.display = 'block';
+        });
+
+        closeSymbol.addEventListener('click', function () {
+            donationFormContainer.style.display = 'none';
+        });
+    });
+</script>

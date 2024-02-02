@@ -178,8 +178,6 @@
     </style>
     <script>
         function cancelPayment() {
-            // Implement your cancellation logic here
-            // Example: Redirect to the home page
             window.location.href = '/';
         }
     </script>

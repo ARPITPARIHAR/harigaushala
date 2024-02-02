@@ -1,38 +1,55 @@
-<div class="container-fluid px-0 mb-5">
-    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="w-100" src="img/front.jpg" alt="Image" style="height: 900px;">
 
-                <div class="carousel-caption" style="background: none !important;">
-                    
-                    
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="w-100" src="img/11.jpeg" alt="Image" style="height: 900px;">
-                <div class="carousel-caption" style="background: none !important;">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-7 text-center">
-                                {{-- <p class="fs-4 text-white animated zoomIn">Welcome to <strong class="text-dark">TEA House</strong></p> --}}
-                                {{-- <h1 class="display-1 text-dark mb-4 animated zoomIn">Organic & Quality Tea Production</h1> --}}
-                                {{-- <a href="" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Explore More</a> --}}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img class="w-100" src="img/front.jpg" alt="Image" style="height: 900px;">
+      </div>
+      <div class="swiper-slide swiper-slide-vertical">
+        <img class="w-100" src="img/11.jpeg" alt="Image" style="height: 900px;">
+      </div>
+      <div class="swiper-slide">
+        <img class="w-100" src="img/cow-photo.jpg" alt="Image" style="height: 900px;">
+      </div>
+      <!-- Add more slides as needed -->
     </div>
-</div>
+ 
+    <div class="swiper-pagination"></div>
+   
+    <div class="swiper-button-next" style="color:white;"></div>
+    <div class="swiper-button-prev" style="color:white;"></div>
+  </div>
+  
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      direction: 'horizontal', // or 'vertical'
+      loop: true, // Set to true if you want a continuous loop
+      speed: 900, // Set the transition speed
+      effect: 'cube', // Use the cube effect
+      grabCursor: true, // Show a grab cursor while dragging
+      cubeEffect: {
+        shadow: true, // Enable shadow for the cube effect
+        slideShadows: true, // Enable slide shadows for the cube effect
+        shadowOffset: 20, // Set the shadow offset (adjust as needed)
+        shadowScale: 0.94, // Set the shadow scale (adjust as needed)
+      },
+      autoplay: {
+        delay: 2000, // Set the delay between slides in milliseconds (3 seconds in this example)
+        disableOnInteraction: false, // Set to false to keep autoplaying even when user interacts with the swiper
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true, // Enable pagination clickable
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  
+  <style>
+   
+</style>
