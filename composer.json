@@ -12,6 +12,7 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
+        "livewire/livewire": "^3.4",
         "razorpay/razorpay": "*",
         "stripe/stripe-php": "^12.3",
         "twilio/sdk": "^7.11"

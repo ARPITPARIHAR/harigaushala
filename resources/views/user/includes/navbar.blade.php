@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <head>
     <meta charset="utf-8">
     <title>Hari pinjara pol Gaushala</title>
@@ -10,8 +10,13 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="{{ ('css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-GLhlTQ8iX1dMYmZtR8RS4OnnLEPBywPb5Ml0Rd5PqFZAc5bsM6c6dIc2M5d2j"
+    crossorigin="anonymous">
+
      {{-- <img class="mk-desktop-logo light-logo" alt="Shree Krishna Gaushala" src="https://shreekrishnagaushala.com/wp-content/uploads/2016/09/logo_gaushala.png"> --}}
      <div class="mk-header d-flex align-items-center justify-content-center" style="margin-right: 0 !important;">
     
@@ -21,20 +26,18 @@
                         <img class="mk-desktop-logo dark-logo rounded-circle" alt="Shree Krishna Gaushala" src="img/cow.jpg">
                     </div>
                     <div class="name text-center" ><h5 class="blink-text"style="color:#043e43!important;">SINCE - 1980</h5>
-                        <h3 style="font-size: 55px; color:#520102; font-family:initial;">SHRI HARI PINJARA POL GAUSHALA</h3>
+                        <h3 style="font-size: 65px; color:#7e1518; font-family:math; margin-left: 15px;"> SHRI  HARI  PINJARA  POL  GAUSHALA</h3>
                         <div class="founder-info">
-                            <p class="founder-name">Founder: Ratan Lal Parihar</p>
+                            <p class="founder-name">संस्थापक : <span id="typed-words" class="typed-words"></span></p>
                         </div>
                     <span class="registration-number" style="color:black"><strong> Registration No : 164/98 </strong></span>
                     </div>
                 </div>
                 
-  
             
     </header>
     
-    
- 
+
     <div class="container-fluid sticky-top" style="background-color:#8B0000!important;">
     
         <div class="container">
@@ -45,26 +48,30 @@
                 <div class="ga-name text-white text-lg font-bold" >
                     {{-- <h3 style="color:white !important;">श्री हरि पिंजरा पोल गौशाला</h3> --}}
                 </div>
+            
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 
-                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                  
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="/" class="nav-item nav-link text-white">Home</a>
-                        <a href="founder" class="nav-item nav-link text-white">Founder Message</a>
-                        <a href="about" class="nav-item nav-link text-white">About Us</a>
-                        <a href="gallery" class="nav-item nav-link text-white">Gallery</a>
-                        <a href="product.html" class="nav-item nav-link text-white">Our Activities</a>
-                        <a href="contact" class="nav-item nav-link text-white">Contact Us</a>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto">
+                            <a href="/" class="nav-item nav-link text-white">Home</a>
+                            <a href="founder" class="nav-item nav-link text-white">Founder Message</a>
+                            <a href="about" class="nav-item nav-link text-white">About Us</a>
+                            <a href="gallery" class="nav-item nav-link text-white">Gallery</a>
+                            <a href="/generate-otp-form" class="nav-item nav-link text-white">Our Activities</a>
+                            <a href="contact" class="nav-item nav-link text-white">Contact Us</a>
+                            <a href="/adminpanel" class="nav-item nav-link text-white">Log In</a>
+                        </div>
                     </div>
-                </div>
                 
-                <a href="#" onclick="openCommentModal()"  class="nav-item nav-link donateBtn text-white" >
-                    <span>Donate</span>
-                </a>
-               
-            </nav>
+                    <a href="#" onclick="openCommentModal()" class="nav-item nav-link donateBtn text-white">
+                        <span>Donate</span>
+                    </a>
+                   
+                  
+                </nav>
+                
         </div>
     </div>
    
@@ -117,11 +124,23 @@
         </div>
     </div>
 
-    <style>
-   
-    </style>
-    
     <script>
+
+$(document).ready(function() {
+    var options = {
+        strings: ["रतनलाल जी परिहार"],  
+        typeSpeed: 80,  
+        backSpeed: 50,  
+        loop: true  
+    };
+    
+    var typed = new Typed("#typed-words", options);
+});
+
+
+        
+      
+    
         function openCommentModal() {
             var id = 1; 
             $('#comment-modal-body').html(null);
@@ -133,14 +152,13 @@
                 $('#comment-modal-body').html(data);
             });
         }
-    </script>
-    
-    <script>
+   
+  
         function closeModal() {
             $('#ajaxModelexa').modal('hide');
         }
+
     </script>
-    
     <style>
 
 * {
@@ -182,9 +200,7 @@
             var callout = document.querySelector('.callout');
             callout.style.display = 'none';
         }
-    </script>
-    
-    <script>
+   
         function closeCallout() {
             // Close the modal
             $('#comment-modal').modal('hide');
@@ -192,9 +208,7 @@
             // Optionally, you can remove the modal backdrop
             // $('.modal-backdrop').remove();
         }
-    </script>
-    
-    <script>
+
         $(document).ready(function () {
             $('#comment-modal').modal({
                 backdrop: 'static',
@@ -209,12 +223,9 @@
             // Attach the closeModal function to the close button
             $('.close-button').on('click', closeModal);
         });
-    </script>
-    
-    
+   
     
 
-    <script>
         // JavaScript code
         let selectedDonation = 0;
 
@@ -279,7 +290,7 @@
         .mk-header {
     width: 100%;
     position: relative;
-    background-color:#FCD6A7!important;
+    background-color:#edc695!important;
 height:200px;
 } 
 .logo-container {
@@ -549,7 +560,23 @@ body, html {
     margin: 0;
     padding: 0;
 }
+@media (max-width: 767px) {
+            .blink-text {
+                font-size: 12px;
+            }
 
+            .h3 {
+                font-size: 2px;
+            }
+
+            .founder-name {
+                font-size: 5px;
+            }
+
+            .registration-number {
+                font-size: 5px;
+            }
+        }
 
     </style>
   <script>

@@ -97,7 +97,7 @@
 </div>
 </div>
 <div class="common-container">
-<div class="elementor-widget-wrap elementor-element-populated" style="background-color: #FED8B1; color:black; background-repeat: no-repeat; background-position: center center;height:400px;">
+<div class="elementor-widget-wrap elementor-element-populated" style="background-color: #e3a96e; color:black; background-repeat: no-repeat; background-position: center center;height:400px;">
     <div class="et_pb_module et_pb_text et_pb_text_51 et_pb_text_align_right et_pb_bg_layout_light"style="font-family: 'Architects Daughter', 'handwriting' !important; font-size: 70px !important; color: #6d2a08 !important; text-align: center !important; font-weight: bold !important; line-height: 1em; margin: 0; padding: 0; border: 0; outline: 0;    animation: blink 2s infinite; /* 2s is the duration, you can adjust it as needed */
     text-decoration: none; ">
                     <div class="et_pb_text" 
@@ -161,6 +161,22 @@
     
 @endsection
 <style>
+@media (max-width: 375px) {
+    .form-row {
+        margin-bottom: 3px;
+    }
+}
+
+    
+    #feedback {
+        height: 40px;
+    }
+
+   
+
+
+
+
      label {
         display: block; /* Make labels block-level elements */
         margin-bottom: 5px;
@@ -255,12 +271,12 @@ h1 {
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); 
     color: white; /* Text color */
-    opacity: 0.9; /* Opacity to make it slightly transparent */
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth opacity and transform transitions on hover */
-    transform-origin: center; /* Set the transform origin to the center for a better scale effect */
+    opacity: 0.9; 
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    transform-origin: center; 
 }
 
-/* Hover effect */
+
 .contact-info:hover {
     opacity: 1; /* Restore full opacity on hover */
     transform: scale(1.02); /* Slight scale-up effect on hover */
@@ -360,4 +376,34 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
             'sitekey': '{{ config('captcha.sitekey') }}',
         });
     }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    document.getElementById('gform_10').addEventListener('submit', function (event) {
+        var name = document.getElementsByName('name')[0].value;
+        var email = document.getElementsByName('email')[0].value;
+        var contactNumber = document.getElementsByName('contact_number')[0].value;
+        var address = document.getElementsByName('address')[0].value;
+        var city = document.getElementsByName('city')[0].value;
+        var feedback = document.getElementsByName('feedback')[0].value;
+
+        if (!name || !email || !contactNumber || !address || !city || !feedback) {
+            
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Please fill all required fields!',
+            });
+
+            event.preventDefault(); // Prevent form submission
+        } else {
+            Swal.fire({
+                icon: 'success',
+                title: 'Success!',
+                text: 'Form submitted successfully!',
+            });
+        }
+    });
 </script>

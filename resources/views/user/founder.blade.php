@@ -10,31 +10,40 @@
     <link rel="stylesheet" href="styles.css">
     <title>Founder's Message</title>
 </head>
-<div class="founder-container" >
-<div class="bo">
-<div class="row">
-    <div class="col-lg-4 col-md-12"> 
-        <div class="service-image relative">
-            <img src="/img/95.png" class="img img-responsive" id="loading">
-            
-            <img src="img/fonder1.jpg" class="img img-responsive absolute service-imgs">   
-       
-        </div>
-            <div class="me"><h3>RATAN LAL PARIHAR</h3><p>( Founder )</p></div>
-      
+
+<div class="founder-container" style="margin-top: 20px; margin-bottom: 20px;">
+    <div class="bo">
+        <div class="row">
+            <div class="col-lg-4 col-md-12"> 
+                <div class="service-image relative">
+                    <img src="/img/95.png" class="img img-responsive" id="loading">
+                    <img src="img/fonder1.jpg" class="img img-responsive absolute service-imgs" alt="Description of the image">
+                </div>
+                <div class="me">
+                    <h3>RATAN LAL PARIHAR</h3>
+                    <p>( Founder )</p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12" style="color:rgb(0, 0, 0); font-size:24px;"> 
+                <p>
+                    इस गौशाला का मुख्य उद्देश्य है गौ माताओं के प्रति समर्पण और सेवा है। हम गौ माताओं को स्वच्छ और स्वस्थ रखकर उनकी देखभाल करते हैं ताकि वे सुरक्षित रह सकें और हम उनके साथ मिलकर धार्मिक तथा प्राकृतिक संस्कृति को साकार कर सकें। इस गौशाला का संचालन धार्मिक आदर्शों और सन्तान धर्म के मूल्यों के प्रति हमारे संकल्प का परिचायक है। हम यहां गौ माताओं को एक पवित्र स्थान पर रखकर उनके साथ धार्मिक संवाद और सेवा का आदान-प्रदान कर रहे हैं।
+                </p>
+                <p>
+                    गौ माताओं का संरक्षण हमारे धरोहर और संस्कृति का अभिन्न हिस्सा है। गाय सभी देवी-देवताओं की अवतारिता मानी जाती है और उनकी सेवा धार्मिक उद्देश्यों की पूर्ति में सहायक होती है। हम इस मानवीय और धार्मिक कर्तव्य का पालन करके गौ माताओं के साथ एक प्राकृतिक और धार्मिक सम्बन्ध की स्थापना करने का प्रयास कर रहे हैं।
+                </p>
+                <p>
+                    गौशाला ने गौ माताओं के समर्पण, प्यार और सेवा के माध्यम से एक सशक्त, नैतिक, और सामरिक समुदाय का निर्माण किया है। हम सभी आपको इस पवित्र कार्य में सहयोग देने और धर्मिक संस्कृति को बढ़ावा देने के लिए आमंत्रित करते हैं। आपका समर्थन हमारे लिए अत्यंत मूल्यवान है।
+                </p>
+            </div>
         </div>
     </div>
 </div>
 </div>
-</div>
-</div>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiple Donation Forms</title>
+
+
+
+
+    
     <style>
         /* CSS styles */
         .donation-form {
@@ -112,6 +121,17 @@
 }
 
     </style>
+
+<style>
+    .img-responsive {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Optional: Center the image horizontally */
+    }
+</style>
+
+
 </head>
 <body>
    

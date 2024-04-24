@@ -1,8 +1,10 @@
 
 
-<div class="container-fluid footer mt-5 py-5 wow fadeIn" style="background: #0b4589 url(../images/fooer-top-layer.png) no-repeat scroll top -35px left; height: 400px; background-repeat: no-repeat; background-size: 100%;" data-wow-delay="0.1s">
 
-    <div class="time" style="text-align:center;color:#ebea1b;font-size:22px;position:relative;">
+    <!--End of Tawk.to Script-->
+<div class="container-fluid footer mt-5 py-5 wow fadeIn" style="background: #01094e url(../images/fooer-top-layer.png) no-repeat scroll top -35px left; height: 400px; background-repeat: no-repeat; background-size: 100%;" data-wow-delay="0.1s">
+
+    <div class="time" style="text-align:center;color:#ebea1b;font-size:24px;position:relative;">
         Opening Hours-> 6:00 am To 10:00 pm
         <div style="border-bottom: 2px solid white; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 280px;"></div>
     </div>
@@ -12,10 +14,15 @@
         <div class="row g-5">
             <div class="col-lg-4 col-md-6">
                 <h4 class="custom-heading">Get In Touch</h4>
-
+<br>
                 <p class="mb-2"style="color:WHITE!important; font-size:18px;"><i class="fa fa-map-marker-alt text-primary me-3"></i>Behind kali mata temple.sujandesr,Bikaner</p>
-                <p class="mb-2"style="color:white!important; font-size:18px"><i class="fa fa-phone-alt text-primary me-3"></i>9829110071</p>
-                <p class="mb-2"style="color:white!important;font-size:18px"><i class="fa fa-envelope text-primary me-3"></i>ankurparihar111@gmail.com</p>
+                <p class="mb-2"style="color:white!important; font-size:18px"><i class="fa fa-phone-alt text-primary me-3"></i></a>
+
+                    <a href="tel:+9829110071" style="color: white;">9829110071</a>, <a href="tel:+918209944063" style="color: white;">8209944063</a>
+
+
+                    </p>
+                <p class="mb-2"style="color:white!important;font-size:18px"><i class="fa fa-envelope text-primary me-3"></i><a href="mailto:ankurparihar111@gmail.com" style="color:white;">ankurparihar111@gmail.com</p>
                 <div class="d-flex pt-3">
                     <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
@@ -25,25 +32,18 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <h4 class="custom-heading">Quick Links</h4>
+                <br>
                 <a class="btn btn-link" style="color:#fffd03;" href="about">About Us</a>
-                <a class="btn btn-link" style="color:white;" href="contact">Contact Us</a>
+                <a class="btn btn-link" style="color:#fffd03;" href="contact">Founder Message</a>
                 {{-- <a class="btn btn-link" href="">Our Services</a> --}}
                 <a class="btn btn-link" style="color:#fffd03;" href="contact">Contact Us</a>
-                <a class="btn btn-link" style="color:#fffd03;" href="contact">Contact Us</a>
+                <a class="btn btn-link" style="color:#fffd03;" href="contact">Gallery</a>
                 {{-- <a class="btn btn-link" href="">Terms & Condition</a> --}}
                 {{-- <a class="btn btn-link" href="">Support</a> --}}
             </div>
 
          
-            {{-- <div class="col-lg-3 col-md-6">
-                <h4 class="text-primary mb-4">Business Hours</h4>
-                <p class="mb-1">Monday - Friday</p>
-                <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                <p class="mb-1">Saturday</p>
-                <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                <p class="mb-1">Sunday</p>
-                <h6 class="text-light">Closed</h6>
-            </div> --}}
+          
             <div class="col-lg-4 col-md-6">
                 <h4 class="custom-heading">Find Us On Map</h4>
                 <div class="map-block mbr-col-sm-12 mbr-jc-c mbr-flex mbr-m-auto mbr-column mbr-col-md-7" >
@@ -51,24 +51,28 @@
                 </div>
          </div> 
   </div>
-    </div>
+ 
 </div>
 
-
-
-<div class="container-fluid copyright py-4" style="background-color:black";>
+  <div class="container-fluid copyright py-4" style="background-color: black; margin-left: 0px; margin-right: 0px !important;">
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a class="fw-medium " style= "color:white">SHEREE HARI PINJRA PIROL GAUSHALA GOCHAR BHUMI GANGASHAHAR</a> <BR><div class= "all" style="color:rgb(212, 255, 20);">All Right Reserved.</div>
+                &copy; <a class="fw-medium " style="color: white">SHEREE HARI PINJRA PIROL GAUSHALA GOCHAR BHUMI GANGASHAHAR</a> <BR><div class="all" style="color:rgb(212, 255, 20);">All Right Reserved.</div>
             </div>
             <div class="col-md-6 text-center text-md-end">
                 <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                Devloped By-> <a class="fw-medium"style= "color:white">ARPIT PARIHAR</a> </a>
+                Devloped By-><a class="fw-medium arpit-name" style="color:white">ARPIT PARIHAR</a>
+                <div class="arpit-image">
+                    <img src="img/arpitji.png" alt="Arpit Parihar's Image">
+                </div>
             </div>
+            
         </div>
     </div>
 </div>
+
+
 <div class="whatsap">
     <a href="https://wa.me/9214590811" target="_blank">
         <img alt="" src="img/w.gif" class="img-fluid">
@@ -76,6 +80,21 @@
 </div>
 <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top" style="background-color:maroon;"><i class="bi bi-arrow-up"></i></a>
 <style>
+
+.arpit-image {
+    display: none !important;
+    position: absolute; 
+    top: 100%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.arpit-name:hover + .arpit-image {
+    display: block; /* Display the image when hovering over the name */
+}
+
+
+
     .whatsap {
     position: fixed;
     bottom: 20px;
@@ -116,4 +135,20 @@
     word-wrap: break-word;
 }
 
+
+@media (max-width: 767px) {
+        /* Adjust styles for smaller screens */
+        .container-fluid.footer {
+            height: auto; /* Adjust height for smaller screens */
+        }
+
+        .et_pb_text_inner {
+            font-size: 16px; /* Adjust font size for smaller screens */
+        }
+
+        /* Add any other styles you want to modify for smaller screens */
+    }
 </style>
+
+
+

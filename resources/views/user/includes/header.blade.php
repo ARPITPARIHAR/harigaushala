@@ -1,47 +1,48 @@
-<div class="row">
-    <div class="col-lg-6 m-auto wow slideInLeft" data-wow-duration="1.50s" style="visibility: visible; animation-name: slideInLeft;">
 
-        <div class="about-content">
-            <br>
-         
-              
+<br>
+<br>
+<div class="container">
+    <div class="row g-5 align-items-center">
+        <div class="col-lg-8 m-auto wow slideInLeft" data-wow-duration="1.50s" style="visibility: visible; animation-name: slideInLeft;">
+            <div class="col-lg-12">
+                <div class="abt" >
+                    <h2 class="sec-title" style="margin-bottom: 0px;">Our Mission and Vision</h2>
+                    <br>
+                    <img src="img/flower.png" style="margin-left: 300px;">
+                    <br>
+                    <p class="mb-8 text-justify font-medium" style="font-size: 24px;">
+                        गौशाला  पिछले 40 वर्षों से निःस्वार्थ भाव से अनाथ गायों की सेवा कर रही है। हमारा मुख्य लक्ष्य है इन गायों के लिए एक पोषणशील और करुणापूरित वातावरण प्रदान करना, उनके कल्याण की सुनिश्चित करना, सहर्ष सेवा भाव से गौवंश को संवर्धित करना एवं सभी जीवों के प्रति संरक्षण और देखभाल के विचार को बढ़ावा देना। हमारा लक्ष्य है एक ऐसा आश्रय स्थापित करना जहां ये गायें वात्सल्य और हर्ष के साथ जीवन बिता सकें,
+                    </p>
+
+                    <p class="font-medium" style="font-size: 24px;">
+                        उद्देश्य:
+                        गौशाला का उद्देश्य है कि हम इन अनाथ गायों के कल्याण के प्रति अपने अदमय समर्पण को जारी रखें। हम एक सेवभाव से परिपूर्ण आश्रय बनने का उत्साह रखते हैं जो मानव और पशुओं के मध्य सान्त्वनापूरित सहजवार्ता को दर्शाता है। हमारा प्रयास है संवेदना और जागरूकता को प्रोत्साहित करना, एक समाज को बढ़चढ़कर सभी जीवों का सम्मान करने और देखभाल करने की दिशा में। गौशाला एक ऐसे भविष्य की कल्पना करती है जहां हर गाय शांति और परिपूर्णता के साथ जीवन जी सकती है। जो स्नेह श्री कृष्ण का गाय के प्रति था, वैसा ही स्नेह भाव गौशाला में स्थापित हो।
+                    </p>
+                </div>
             </div>
-            <div class="abt" style="margin-left:20px;">
-                <h2 class="sec-title" style="margin-bottom:0px;">Our Mission and Vision</h2>
-                <br>
-                <img src="img/flower.png" style="margin-left: 240px;">
-                <br>
-            <p class="mb-8 text-justify font-medium" style="font-size: 24px;">
-                गौशाला  पिछले 40 वर्षों से निःस्वार्थ भाव से अनाथ गायों की सेवा कर रही है। हमारा मुख्य लक्ष्य है इन गायों के लिए एक पोषणशील और करुणापूरित वातावरण प्रदान करना, उनके कल्याण की सुनिश्चित करना,सहर्ष सेवा भाव से गौवंश को संवर्धित करना एवं सभी जीवों के प्रति संरक्षण और देखभाल के विचार को बढ़ावा देना। हमारा लक्ष्य है एक ऐसा आश्रय स्थापित करना जहां ये गायें वात्सल्य और हर्ष के साथ जीवन बिता सकें,
-            </p>
+        </div>
 
-            <p class="font-medium" style="font-size: 24px;">
-                उद्देश्य:
-                गौशाला का उद्देश्य है कि हम इन अनाथ गायों के कल्याण के प्रति अपने अदमय समर्पण को जारी रखें। हम एक सेवभाव से परिपूर्ण आश्रय बनने का उत्साह रखते हैं जो मानव और पशुओं के मध्य सान्त्वनापूरित सहजवार्ता को दर्शाता है। हमारा प्रयास है संवेदना और जागरूकता को प्रोत्साहित करना, एक समाज को बढ़चढ़कर सभी जीवों का सम्मान करने और देखभाल करने की दिशा में। गौशाला एक ऐसे भविष्य की कल्पना करती है जहां हर गाय शांति और परिपूर्णता के साथ जीवन जी सकती है।जो स्नेह श्री कृष्ण का गाय के प्रति था,वैसा ही स्नेह भाव गौशाला में स्थापित हो।
-            </p>
+        <div class="col-lg-4 m-auto wow slideInRight" data-wow-duration="1.50s" style="visibility: visible; animation-name: slideInRight;">
+            <div class="col-lg-12">
+                <div class="row g-3">
+                    <div class="col-6 text-start">
+                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg">
+                    </div>
+                    <div class="col-6 text-start">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg" style="margin-top: 25%;">
+                    </div>
+                    <div class="col-6 text-end">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg">
+                    </div>
+                    <div class="col-6 text-end">
+                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="col-lg-6 mb-res-sm-8 wow slideInRight" data-wow-duration="1.50s" style="visibility: visible; animation-name: slideInRight;">
-        <div class="about-left-image" style="margin-top:120px;">
-            <img src="img/vm.png" alt="" class="w-2/3 mx-auto rounded-lg">
-        </div>
-    </div>
-</div>    
-
-{{-- <div class="said">
-    <div class="overlay"></div>
-    <div class="founder-text">
-        <strong>Founder Said</strong>
-        <p>गाय एक मात्र पशुऐसे है जिसका सब कुछ सभी की सेवा में काम आता है।</p>
-    </div>
-</div> --}}
 
 
 <div class="white-triangle"></div>
@@ -50,69 +51,7 @@
         <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.0s">
             <div class=" rounded-full px-4 py-2 text-2xl mb-3 inline-block" style="background-color: black; color:white;font-size:22px;border-radius:40px;width:220px;margin-right:50%;margin-left:40%;">Our Trustee</div>
             
-        <style>
-
-.sec-title{
-margin: 0 0 4px;
-    padding: 0;
-    font-size: 48px;
-    line-height: 40px;
-    color: #CB0000;
-    text-align: center;
-    font-family: 'Great Vibes';
-    font-weight: normal;
-    }
-
-    .abt {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    box-shadow: black 0 0px 15px -3px;
-    padding: 50px 30px 50px 30px;
-    border-radius: 15px;
-    background-color: white;
-}
-            .underline-animation {
-                position: relative;
-                display: inline-block;
-                color: purple !important;
-                text-decoration: none !important;
-            }
-        
-            .underline-animation::after {
-                content: '';
-                position: absolute;
-                left: 0;
-                bottom: 31px !important; /* Adjust the gap by changing the value here */
-                width: 100%;
-                height: 4px;
-                background-color: #06b3da !important; /* Your desired color */
-                transform-origin: 0 50%;
-            }
-        
-            .point {
-                position: absolute;
-                content: '';
-                width: 10px;
-                height: 10px;
-                background-color: #874b06 !important; /* Your desired color */
-                border-radius: 50%;
-                bottom: 27px !important;
-                left: 0;
-                animation: movePoint 2s linear infinite; /* Adjust the animation duration as needed */
-            }
-        
-            @keyframes movePoint {
-                0% {
-                    left: 0;
-                }
-                50% {
-                    left: 100%;
-                }
-                100% {
-                    left: 0;
-                }
-            }
-        </style>
+       
         
         <a href="#" class="underline-animation">
             <h2 class="text-3xl mb-5" style="color:purple;">Meet Our Trust Members <span class="point"></span></h2>
@@ -659,18 +598,9 @@ margin: 0 0 4px;
 </div>
 </section>
 
-      
-
-    
    
    
    
-    
-  
-
-
-
-
 
 <div id="donationForm" style=" background-color: white !important;">
 <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
@@ -749,58 +679,68 @@ margin: 0 0 4px;
         </video>
     </div>
       
-    <style>
-        .center-video {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          background-color: #fb9f38;
-        }
-      
-       
-        video {
-          max-width: 100%;
-        }
-
-     </style>
-      
-      <div class="bg h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
    
-<div class="bank-container">
-    <div class="bd text-center">Bank Details</div>
-    <br>
-    <h5 class="mb-5 text-center" style="color:whitesmoke;" id="movingText">You can deposit your donation in the below-mentioned bank accounts.</h5>
 
-<div class="row row-eq-height justify-content-center"> 
-      
-<div class="col-md-10 col-xs-12 bank-detail-box">
-<div class="bank-details">
-<i class="fa fa-bank"></i><small>Bank Name :</small>
-  <h3 style="color:gold;">ICICI Bank</h3>
-  <strong>Account Name :</strong>
-
-    SHRI HARI PINJARA POL GAUSHALA</p>
-  <p><strong>Account Number :</strong>
-   669801027989</p>
-  <p><strong>IFSC Code :</strong>
-                ICIC0006698</p>
-
-
-     <strong style="color:cyan";>Note – We will get your donation amount after income tax deduction under article 80G.</strong>
-</div>
+<div class="bd text-center">Bank Details</div>
+       <div class="bg h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
+      <div class="container">
+        <div class="row">
+            <!-- Bank Details Container -->
+            <div class="col-md-6 col-xs-12">
+                <div class="bg h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
+    
+                    <div class="bank-container" style="background-color: black;">
+                       
+                        <br>
+                    
+                        <div class="row row-eq-height justify-content-center">
+                            <div class="col-md-12 bank-detail-box">
+                                <div class="bank-details" style="margin-top:70px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                    <i class="fa fa-bank"></i><small>Bank Name :</small>
+                                    <h3 style="color:gold;">ICICI Bank</h3>
+                                    <strong>Account Name :</strong> SHRI HARI PINJARA POL GAUSHALA</p>
+                                    <p><strong>Account Number :</strong> 669801027989</p>
+                                    <p><strong>IFSC Code :</strong> ICIC0006698</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="col-md-6 col-xs-12">
+                <div class="bg h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
+    
+                    <div class="qr-code-container">
+                    
+                        <br>
+                        <div class="row row-eq-height justify-content-center">
+                            <div class="col-md-12 qr-code-box">
+                                <div class="qr-code-details">
+                                    <img src="image.png" alt="QR Code for Donation" style="max-width: 100%; height: auto;">
+                                    <p>Scan the QR code for easy payment.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <marquee direction="left" behavior="scroll" style="color:#aa0000; font-size:38px;">Note – Your donation amount is eligible for income tax deduction under Article 80G.</marquee> 
 </div> 
-</div>
-</div>
-</div>
-</div>
+
+
 <br>
   
 <div class="container-xxl contact py-5"   style="background-color: #BC8F8F !important; color:white ; border-radius: 10px";>
     <div class="container">
         <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.8s" style="max-width: 500px;> 
             <p class="fs-5 fw-medium fst-italic text-primary"></p>
-            <h1 class="display-6" style="color:darkred";>Contact Us </h1>
+            <h1 class="display-6" style="color:red ;font-size:60px";>Contact Us </h1>
         </div>
         <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.1s">
             <div class="col-lg-8">
@@ -810,8 +750,8 @@ margin: 0 0 4px;
                         <div class="btn-square mx-auto mb-3">
                             <i class="fa fa-envelope fa-2x text-white"></i>
                         </div>
-                        <p class="mb-2" style="font-size: 22px;font-family:cursive;color:navy;">ankurparihar111@gmail.com</p>
-                        <p class="mb-0"style="font-size: 22px;font-family:cursive;color:navy;">shppg46@gmail.com</p>
+                        <p class="mb-2" style="font-size: 22px;font-family:cursive;color:white;">ankurparihar111@gmail.com</p>
+                        <p class="mb-0"style="font-size: 22px;font-family:cursive;color:white;">shppg46@gmail.com</p>
                     </div>
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.4s">
                         <div class="btn-square mx-auto mb-3">
@@ -834,7 +774,29 @@ margin: 0 0 4px;
 </div>
 </div>
 
+<style>
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #222222;
+    color: #ffffff;
+}
+</style>
 <script>
+
+// JavaScript to toggle between light mode and dark mode
+document.getElementById("theme-toggle").addEventListener("click", function() {
+    document.body.classList.toggle("light-mode");
+    document.body.classList.toggle("dark-mode");
+});
+
+
+
     document.addEventListener("DOMContentLoaded", function () {
         var donationForms = document.querySelectorAll('.donation-form');
         var lastClickedButton = null;
@@ -891,15 +853,8 @@ margin: 0 0 4px;
             }
         });
     });
-</script>
 
 
-
-
-
-
-
-<script>
     var video = document.getElementById('videoPlayer');
     var seekSlider = document.getElementById('seekSlider');
     
@@ -1366,6 +1321,7 @@ margin: 0 0 4px;
 .bank-details{
     color: white;
     font-size:22px;
+    background-color: #00544b;
 }
 
 
@@ -1380,12 +1336,11 @@ margin: 0 0 4px;
     color:red;
 }
 .bank-container {
-     background-image: url('img/bgjpg.jpg'); 
+     /* background-image: url('img/bgjpg.jpg');  */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin-left: 95px; 
-    margin-right: 95px; 
+   
     text-align: center;
    border-radius: 20px;
   
@@ -1576,8 +1531,8 @@ color:#4863A0;
 font-size: 25px;}
 
 .bd{
-background-color: linear-gradient(0deg, rgba(255, 255, 255, 0.018) 0%, rgba(255, 255, 255, 0) 100%); backdrop-filter: blur(3.5px); box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); border-radius: 30px; padding: 7rem 3rem; margin: 0; overflow: visible; position: relative;
-    border-radius: 15px;
+background-color: rgb(198, 19, 48);
+    border-radius: 35px;
     width: 240px;
     padding: 15px 0 15px;
     height: auto;
@@ -1668,8 +1623,102 @@ background-color: linear-gradient(0deg, rgba(255, 255, 255, 0.018) 0%, rgba(255,
 h1.display-6:hover {
     transform: scale(1.05);
 }
-              
-             
+
+
+
+
+.row.g-5 {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-lg-8,
+.col-lg-4 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+.sec-title{
+margin: 0 0 4px;
+padding: 0;
+font-size: 48px;
+line-height: 40px;
+color: #CB0000;
+text-align: center;
+font-family: 'Great Vibes';
+font-weight: normal;
+}
+
+.abt {
+margin-top: 50px;
+margin-bottom: 50px;
+box-shadow: black 0 0px 15px -3px;
+padding: 50px 30px 50px 30px;
+border-radius: 15px;
+background-color: white;
+}
+        .underline-animation {
+            position: relative;
+            display: inline-block;
+            color: purple !important;
+            text-decoration: none !important;
+            
+        }
+    
+        .underline-animation::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 31px !important; /* Adjust the gap by changing the value here */
+            width: 100%;
+            height: 4px;
+            background-color: #06b3da !important; /* Your desired color */
+            transform-origin: 0 50%;
+        }
+    
+        .point {
+            position: absolute;
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-color: #874b06 !important; /* Your desired color */
+            border-radius: 50%;
+            bottom: 27px !important;
+            left: 0;
+            animation: movePoint 2s linear infinite; /* Adjust the animation duration as needed */
+        }
+    
+        @keyframes movePoint {
+            0% {
+                left: 0;
+            }
+            50% {
+                left: 100%;
+            }
+            100% {
+                left: 0;
+            }
+
+
+            <style>
+        .center-video {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: #fb9f38;
+        }
+      
+       
+        video {
+          max-width: 100%;
+        }
+
+   
+
+        }
     
         </style>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

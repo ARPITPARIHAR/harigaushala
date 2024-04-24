@@ -11,6 +11,12 @@ class HomeController extends Controller
 
     
 }
+
+public function admin(){
+    return view('admin.home');
+
+    
+}
 public function contact(){
     return view('user.contact');
 
@@ -31,6 +37,11 @@ public function about(){
 
 public function gallery(){
     return view('user.gallery');
+
+    
+}
+public function login(){
+    return view('user.login');
 
     
 }

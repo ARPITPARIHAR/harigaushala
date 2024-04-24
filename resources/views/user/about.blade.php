@@ -11,7 +11,7 @@
 
 <div class="about-us-container">
     <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay="1.5s" style=" visibility: visible; animation-delay: 1.3s; animation-name: fadeIn;">
-    <div class="about-us-heading" style="font-size:48px; font-family:Arial, Helvetica, sans-serif;">About ShRee HaRi Pinjra PiRol GauShala</div>
+    <div class="about-us-heading" style="font-size:52px; font-family:Arial, Helvetica, sans-serif;">About ShRee HaRi Pinjra PiRol GauShala</div>
     <img src="img/top.png" alt="Description of the image">
     <br>
     <p class="about-us-paragraph">
@@ -141,20 +141,20 @@ document.getElementById('close-popup').addEventListener('click', function() {
     }
 
     function processCardPayment() {
-        // Implement your payment processing logic here
+        
         alert("Processing card payment...");
     }
 </script>
 <style>
     .about-us-container {
-                background-color:rgba(1, 72, 172, 0.886);; /* Light gray background */
+                background-color:rgba(1, 72, 172, 0.886);; 
                 padding: 20px;
                 border-radius: 8px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-                margin-top: -150px;/* Shadow effect */
+                margin-top: -150px;
             }
     
-            /* Style the heading for the "About Us" section */
+         
             .about-us-heading {
                 font-size: 28px;
                 color:rgb(208, 255, 0); /* Dark gray text color */
@@ -162,9 +162,8 @@ document.getElementById('close-popup').addEventListener('click', function() {
                 margin-bottom: 20px;
             }
     
-            /* Style the paragraph text within the "About Us" content */
             .about-us-paragraph {
-                font-size: 20px;
+                font-size: 24px;
                 line-height: 1.6;
                 color:white;
                 font-family: cursive; /* Slightly darker gray text color */
@@ -173,10 +172,7 @@ document.getElementById('close-popup').addEventListener('click', function() {
             .about-us-paragraph:hover {
         color:black; /* Change the text color to red on hover */
     }
-    
-    
-    
-    
+
     
             .get-involved {
                 background-color:lightcoral; /* White background */
@@ -238,24 +234,85 @@ document.getElementById('close-popup').addEventListener('click', function() {
     
         .about-text {
             font-size: 80px;
-            color: red; /* Set the text color for "about" to red */
+            color: red; 
             margin-top: 20px;
             margin-bottom: 20px;
         }
     
         .us-text {
             font-size: 80px;
-            color: #FFFF00; /* Set the text color for "US" to yellow (#FFFF00) */
+            color: #FFFF00; 
             margin-top: 20px;
             margin-bottom: 20px;
         }
     
+        @media (max-width: 767px) {
+            .about h2 {
+                font-size: 24px;
+            }
+
+            .about-us-heading {
+                font-size: 24px;
+            }
+
+            .about-us-paragraph {
+                font-size: 14px;
+            }
+
+            .get-involved-heading {
+                font-size: 28px;
+            }
+
+            .get-involved-list li {
+                font-size: 16px;
+            }
+        }
+       
+        @media (max-width: 767px) {
+        /* Styles for screens with a maximum width of 767px (typical mobile screens) */
+        .about h2 {
+            font-size: 24px;
+        }
+
+        .about-us-heading {
+            font-size: 24px;
+        }
+
+        .about-us-paragraph {
+            font-size: 14px;
+        }
+
+        .get-involved-heading {
+            font-size: 28px;
+        }
+
+        .get-involved-list li {
+            font-size: 16px;
+        }
+
+        /* Additional responsive styles can be added here */
+    }
+
+    @media (max-width: 576px) {
+        /* Styles for smaller screens */
+        .about h2 {
+            font-size: 10px;
+            margin-top: -80px;
+        }
+
+        /* Add more styles as needed for screens narrower than 576px */
+    }
     
-        /* Reset some default styles for consistency */
-    
-    /* Style the About Us section */
-    
-    
+
+    @media (max-width: 767px) {
+        /* Additional styles for smaller screens */
+        .about-us-container img {
+            width: 100%;    /* Expand the image to fill the container */
+            height: auto;   /* Maintain the aspect ratio */
+        }
+    }
+
+
     </style>
 
 
