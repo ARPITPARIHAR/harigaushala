@@ -1,35 +1,19 @@
-<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-<!-- Google font-->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-<!-- waves.css -->
-<link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
-<!-- Required Fremwork -->
-<link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
-<!-- waves.css -->
-<link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
-<!-- themify icon -->
-<link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
-<!-- font-awesome-n -->
-<link rel="stylesheet" type="text/css" href="assets/css/font-awesome-n.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-<!-- scrollbar.css -->
-<link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
-<!-- Style.css -->
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<script type="text/javascript" src="assets/js/jquery/jquery.min.js "></script>
-<script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>
-<script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap/js/bootstrap.min.js "></script>
-<!-- waves js -->
-<script src="assets/pages/waves/js/waves.min.js"></script>
-<!-- jquery slimscroll js -->
-<script type="text/javascript" src="assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+	<link rel="stylesheet" href="assets/css/ready.css">
+	<link rel="stylesheet" href="assets/css/demo.css">
 
-<!-- slimscroll js -->
-<script src="assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
-
-<!-- menu js -->
-<script src="assets/js/pcoded.min.js"></script>
-<script src="assets/js/vertical/vertical-layout.min.js "></script>
-
-<script type="text/javascript" src="assets/js/script.js "></script>
+    <script src="assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="assets/js/core/popper.min.js"></script>
+<script src="assets/js/core/bootstrap.min.js"></script>
+<script src="assets/js/plugin/chartist/chartist.min.js"></script>
+<script src="assets/js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js"></script>
+<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script src="assets/js/plugin/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="assets/js/plugin/jquery-mapael/maps/world_countries.min.js"></script>
+<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<script src="assets/js/ready.min.js"></script>
+<script src="assets/js/demo.js"></script>

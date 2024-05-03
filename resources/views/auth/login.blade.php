@@ -1,83 +1,130 @@
-@extends('admin.layouts.app')
-@section('meta_title','game')
 
-@include('admin.includes.navbar')
-@include('admin.includes.leftbar')
-
-
-
-<section class="login-block">
-    <!-- Container-fluid starts -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <!-- Authentication card start -->
-
-                    <form class="md-float-material form-material">
-                        <div class="text-center">
-                            <img src="assets/images/logo.png" alt="logo.png">
-                        </div>
-                        <div class="auth-box card">
-                            <div class="card-block">
-                                <div class="row m-b-20">
-                                    <div class="col-md-12">
-                                        <h3 class="text-center">Sign In</h3>
-                                    </div>
-                                </div>
-                                <div class="form-group form-primary">
-                                    <input type="text" name="email" class="form-control">
-                                    <span class="form-bar"></span>
-                                    <label class="float-label">Your Email Address</label>
-                                </div>
-                                <div class="form-group form-primary">
-                                    <input type="password" name="password" class="form-control">
-                                    <span class="form-bar"></span>
-                                    <label class="float-label">Password</label>
-                                </div>
-                                <div class="row m-t-25 text-left">
-                                    <div class="col-12">
-                                        <div class="checkbox-fade fade-in-primary d-">
-                                            <label>
-                                                <input type="checkbox" value="">
-                                                <span class="cr"><i class="cr-icon icofont icofont-ui-check txt-primary"></i></span>
-                                                <span class="text-inverse">Remember me</span>
-                                            </label>
-                                        </div>
-                                        <div class="forgot-phone text-right f-right">
-                                            <a href="auth-reset-password.html" class="text-right f-w-600"> Forgot Password?</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row m-t-30">
-                                    <div class="col-md-12">
-                                        <button type="button" class="btn btn-primary btn-md btn-block waves-effect waves-light text-center m-b-20">Sign in</button>
-                                    </div>
-                                </div>
-                                <hr/>
-                                <div class="row">
-                                    <div class="col-md-10">
-                                        <p class="text-inverse text-left m-b-0">Thank you.</p>
-                                        <p class="text-inverse text-left"><a href="/"><b>Back to website</b></a></p>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <img src="assets/images/auth/Logo-small-bottom.png" alt="small-logo.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <!-- end of form -->
-            </div>
-            <!-- end of col-sm-12 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | Shree Hari Pinjra Pol Gaushala</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Welcome Back!</h2>
+      <form class="login-form">
+        <div class="input-group">
+          <input type="text" id="username" name="username" placeholder="Username" required>
         </div>
-        <!-- end of row -->
+        <div class="input-group">
+          <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <br>
+        <button type="submit">Login</button>
+      </form>
+      <br>
+      <div class="back-to-website">
+        <a href="/">Back to Website</a>
+      </div>
+      <div class="access-info">Only administrators have access.</div>
     </div>
-    <!-- end of container-fluid -->
-</section>
+  </div>
+</body>
+</html>
 
-@section('style')
-    
-@endsection
-@section('script')
-    
-@endsection
+
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fd5f00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  width: 90%; /* Adjusted container width */
+  max-width: 500px; /* Added max-width to ensure it doesn't exceed a certain size */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.login-box {
+  padding: 40px;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.login-box h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #736d12;
+  outline: none;
+  font-size: 16px;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-bottom-color: #0056b3;
+}
+
+button[type="submit"], .back-to-website a {
+  width: 100%;
+  padding: 10px;
+  background: #851313;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: cursive;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+button[type="submit"]:hover, .back-to-website a:hover {
+  background: #0056b3;
+}
+
+.access-info {
+  font-size: 18px;
+  color: #777777;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 600px) {
+  .login-container {
+    width: 95%;
+  }
+}
+
+  </style>

@@ -173,7 +173,49 @@
     </div>
 </div>
 </div>
-<link rel="stylesheet" href="path-to/animate.css">
+<div class="d-flex justify-content-evenly flex-wrap counter-container">
+    <div class="counter-item position-relative">
+      <img src="img/bubble-red.png" alt="">
+      <div class="content-counter-1 float-element">
+        <h3 class="span-text counter-animation">
+          <span class="counter" style="color: white;">1</span>
+        </h3>
+        <p class="span-para counter-animation" style="color: white; font-size: 22px;">
+          Cows
+        </p>
+      </div>
+    </div>
+  
+    <div class="counter-item position-relative">
+      <img src="img/bubble-yellow.png" alt="">
+      <div class="content-counter-1 float-element">
+        <h3 class="span-text counter-animation"><span class="counter" style="color:white;">1</span></h3>
+        <p class="span-para counter-animation" style="color:white; font-size:22px;">Years</p>
+      </div>
+    </div>
+    <div class="counter-item position-relative">
+      <img src="img/bubble-blue.png" alt="">
+      <div class="content-counter-1 float-element">
+        <h3 class="span-text counter-animation"><span class="counter" style="color:white;">7</span>+</h3>
+        <p class="span-para counter-animation" style="color:white; font-size:22px;">bigha</p>
+      </div>
+    </div>
+  
+    <div class="counter-item position-relative">
+      <img src="img/bubble-green.png" alt="">
+      <div class="content-counter-2 float-element">
+        <h3 class="span-text counter-animation"><span class="counter" style="color:white;">7</span></h3>
+            <p class="span-para counter-animation" style="color:white; font-size:22px;">Trees</p>
+      </div>
+    </div>
+  </div>
+  
+ 
+  
+  
+  
+
+{{-- <link rel="stylesheet" href="path-to/animate.css">
 <script src="path-to/wow.js"></script>
     <script src="script.js"></script> 
     <h2 class="donation_head" style="text-align: center; background-color:; padding: 10px; color:#810541; margin-left:200px; margin-right:200px; border-radius: 20px;font-family: 'Handlee', cursive !important;">
@@ -501,7 +543,9 @@
 </div>
 </div>
 </div>
-</div>
+</div> --}}
+
+
  <section class="section faq fade-in">
         <div class="container">
             
@@ -562,7 +606,7 @@
                                                 
                   
                 <div class="accordion accordion--primary">
-                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay="3.5s" style="visibility: visible; animation-delay: 2.3s; animation-name: fadeIn;">
+                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay="3.2s" style="visibility: visible; animation-delay: 2.3s; animation-name: fadeIn;">
                                 
                         <div class="accordion__title-block">
                 
@@ -573,12 +617,12 @@
                         <p style="margin-top:10px";>You can carry any Vedic things for go puja. As Your Suitable<br>
 
                         
-                                                                    </p>
+                                            </p>
                     </div>
                 </div>
                                    
                 </div><div class="accordion accordion--primary">
-                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay="4.1s" style="visibility: visible; animation-delay: 2.3s; animation-name: fadeIn;">
+                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay="3.5s" style="visibility: visible; animation-delay: 2.3s; animation-name: fadeIn;">
                                 
                         <div class="accordion__title-block">
                         <h6 class="accordion__title">Do Gaushala sell your cows or oxen?</h6><span class="accordion__close"></span>
@@ -866,7 +910,33 @@ document.getElementById("theme-toggle").addEventListener("click", function() {
       video.currentTime = seekSlider.value;
     });
   </script>
+   
+   <script>
+    const counterElements = document.querySelectorAll('.counter');
   
+    // Define target values for each counter
+    const targetValues = [200, 40, 7, 1500];
+    // Define animation speeds for each counter (in milliseconds)
+    const animationSpeeds = [80, 400, 1300, 10];
+  
+    counterElements.forEach((counterElement, index) => {
+      let initialValue = 0; // Start from 0 for animation
+      let targetValue = targetValues[index];
+      let animationSpeed = animationSpeeds[index];
+  
+      const intervalId = setInterval(() => {
+        if (initialValue >= targetValue) {
+          clearInterval(intervalId);
+        } else {
+          initialValue++;
+          counterElement.textContent = initialValue + '+';
+        }
+      }, animationSpeed);
+    });
+  </script>
+  
+
+
   <style>
 
     @keyframes bounceInUp {
@@ -1719,6 +1789,46 @@ background-color: white;
    
 
         }
+
+        .content-counter-1, .content-counter-3 {
+    top: 30%;
+    left: 10%;
+}
+    .float-element {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+
+    .span-text {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .span-para {
+        font-size: 14px;
+        color: #666;
+    }
+
+    /* CSS Animation */
+    .counter-animation {
+        animation: count 2s ease-out;
+    }
+
+    @keyframes count {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     
         </style>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

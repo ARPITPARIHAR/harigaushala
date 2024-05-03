@@ -1,196 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Material Able bootstrap admin template by Codedthemes</title>
-    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 10]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
-    <meta name="author" content="Codedthemes" />
-    <!-- Favicon icon -->
-
-</head>
-
 <body>
-    <!-- Pre-loader start -->
-    <div class="theme-loader">
-        <div class="loader-track">
-            <div class="preloader-wrapper">
-                <div class="spinner-layer spinner-blue">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="gap-patch">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-                <div class="spinner-layer spinner-red">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="gap-patch">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-
-                <div class="spinner-layer spinner-yellow">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="gap-patch">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-
-                <div class="spinner-layer spinner-green">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="gap-patch">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Pre-loader end -->
-    <div id="pcoded" class="pcoded">
-        <div class="pcoded-overlay-box"></div>
-        <div class="pcoded-container navbar-wrapper">
-            <nav class="navbar header-navbar pcoded-header">
-                <div class="navbar-wrapper">
-                    <div class="navbar-logo">
-                        <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
-                            <i class="ti-menu"></i>
-                        </a>
-                        <div class="mobile-search waves-effect waves-light">
-                            <div class="header-search">
-                                <div class="main-search morphsearch-search">
-                                    <div class="input-group">
-                                        <span class="input-group-prepend search-close"><i class="ti-close input-group-text"></i></span>
-                                        <input type="text" class="form-control" placeholder="Enter Keyword">
-                                        <span class="input-group-append search-btn"><i class="ti-search input-group-text"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="index.html">
-                            <img class="img-fluid" src="assets/images/logo.png" alt="Theme-Logo" />
-                        </a>
-                        <a class="mobile-options waves-effect waves-light">
-                            <i class="ti-more"></i>
-                        </a>
-                    </div>
-                    <div class="navbar-container container-fluid">
-                        <ul class="nav-left">
-                            <li>
-                                <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
-                            </li>
-                            <li>
-                                <a href="#!" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
-                                    <i class="ti-fullscreen"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="nav-right">
-                            <li class="header-notification">
-                                <a href="#!" class="waves-effect waves-light">
-                                    <i class="ti-bell"></i>
-                                    <span class="badge bg-c-red"></span>
-                                </a>
-                                <ul class="show-notification">
-                                    <li>
-                                        <h6>Notifications</h6>
-                                        <label class="label label-danger">New</label>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-2.jpg" alt="Generic placeholder image">
-                                            <div class="media-body">
-                                                <h5 class="notification-user">John Doe</h5>
-                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                                <span class="notification-time">30 minutes ago</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-4.jpg" alt="Generic placeholder image">
-                                            <div class="media-body">
-                                                <h5 class="notification-user">Joseph William</h5>
-                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                                <span class="notification-time">30 minutes ago</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-3.jpg" alt="Generic placeholder image">
-                                            <div class="media-body">
-                                                <h5 class="notification-user">Sara Soudein</h5>
-                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                                <span class="notification-time">30 minutes ago</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="user-profile header-notification">
-                                <a href="#!" class="waves-effect waves-light">
-                                    <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
-                                    <span>John Doe</span>
-                                    <i class="ti-angle-down"></i>
-                                </a>
-                                <ul class="show-notification profile-notification">
-                                    <li class="waves-effect waves-light">
-                                        <a href="#!">
-                                            <i class="ti-settings"></i> Settings
-                                        </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <a href="user-profile.html">
-                                            <i class="ti-user"></i> Profile
-                                        </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <a href="email-inbox.html">
-                                            <i class="ti-email"></i> My Messages
-                                        </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <a href="auth-lock-screen.html">
-                                            <i class="ti-lock"></i> Lock Screen
-                                        </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <a href="auth-normal-sign-in.html">
-                                            <i class="ti-layout-sidebar-left"></i> Logout
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+	<div class="wrapper">
+		<div class="main-header">
+			<div class="logo-header">
+				<a href="index.html" class="logo">
+					Ready Dashboard
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<button class="topbar-toggler more"><i class="la la-ellipsis-v"></i></button>
+			</div>
+			<nav class="navbar navbar-header navbar-expand-lg">
+				<div class="container-fluid">
+					
+					<form class="navbar-left navbar-form nav-search mr-md-3" action="">
+						<div class="input-group">
+							<input type="text" placeholder="Search ..." class="form-control">
+							<div class="input-group-append">
+								<span class="input-group-text">
+									<i class="la la-search search-icon"></i>
+								</span>
+							</div>
+						</div>
+					</form>
+					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="la la-envelope"></i>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="la la-bell"></i>
+								<span class="notification">3</span>
+							</a>
+							<ul class="dropdown-menu notif-box" aria-labelledby="navbarDropdown">
+								<li>
+									<div class="dropdown-title">You have 4 new notification</div>
+								</li>
+								<li>
+									<div class="notif-center">
+										<a href="#">
+											<div class="notif-icon notif-primary"> <i class="la la-user-plus"></i> </div>
+											<div class="notif-content">
+												<span class="block">
+													New user registered
+												</span>
+												<span class="time">5 minutes ago</span> 
+											</div>
+										</a>
+										<a href="#">
+											<div class="notif-icon notif-success"> <i class="la la-comment"></i> </div>
+											<div class="notif-content">
+												<span class="block">
+													Rahmad commented on Admin
+												</span>
+												<span class="time">12 minutes ago</span> 
+											</div>
+										</a>
+										<a href="#">
+											<div class="notif-img"> 
+												<img src="assets/img/profile2.jpg" alt="Img Profile">
+											</div>
+											<div class="notif-content">
+												<span class="block">
+													Reza send messages to you
+												</span>
+												<span class="time">12 minutes ago</span> 
+											</div>
+										</a>
+										<a href="#">
+											<div class="notif-icon notif-danger"> <i class="la la-heart"></i> </div>
+											<div class="notif-content">
+												<span class="block">
+													Farrah liked Admin
+												</span>
+												<span class="time">17 minutes ago</span> 
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<a class="see-all" href="javascript:void(0);"> <strong>See all notifications</strong> <i class="la la-angle-right"></i> </a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <img src="assets/img/profile.jpg" alt="user-img" width="36" class="img-circle"><span >Hizrian</span></span> </a>
+							<ul class="dropdown-menu dropdown-user">
+								<li>
+									<div class="user-box">
+										<div class="u-img"><img src="assets/img/profile.jpg" alt="user"></div>
+										<div class="u-text">
+											<h4>Hizrian</h4>
+											<p class="text-muted">hello@themekita.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+										</div>
+									</li>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#"><i class="ti-user"></i> My Profile</a>
+									<a class="dropdown-item" href="#"></i> My Balance</a>
+									<a class="dropdown-item" href="#"><i class="ti-email"></i> Inbox</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#"><i class="ti-settings"></i> Account Setting</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#"><i class="fa fa-power-off"></i> Logout</a>
+								</ul>
+								<!-- /.dropdown-user -->
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>

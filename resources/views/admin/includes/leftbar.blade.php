@@ -1,189 +1,192 @@
->
+<div class="sidebar">
+    <div class="scrollbar-inner sidebar-wrapper">
+        <div class="user">
+            <div class="photo">
+                <img src="assets/img/profile.jpg">
+            </div>
+            <div class="info">
+                <a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+                    <span>
+                        Hizrian
+                        <span class="user-level">Administrator</span>
+                        <span class="caret"></span>
+                    </span>
+                </a>
+                <div class="clearfix"></div>
 
-            <div class="pcoded-main-container">
-                <div class="pcoded-wrapper">
-                    <nav class="pcoded-navbar">
-                        <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
-                        <div class="pcoded-inner-navbar main-menu">
-                            <div class="">
-                                <div class="main-menu-header">
-                                    <img class="img-80 img-radius" src="assets/images/avatar-4.jpg" alt="User-Profile-Image">
-                                    <div class="user-details">
-                                        <span id="more-details">John Doe<i class="fa fa-caret-down"></i></span>
-                                    </div>
-                                </div>
-                                <div class="main-menu-content">
-                                    <ul>
-                                        <li class="more-details">
-                                            <a href="user-profile.html"><i class="ti-user"></i>View Profile</a>
-                                            <a href="#!"><i class="ti-settings"></i>Settings</a>
-                                            <a href="auth-normal-sign-in.html"><i class="ti-layout-sidebar-left"></i>Logout</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="p-15 p-b-0">
-                                <form class="form-material">
-                                    <div class="form-group form-primary">
-                                        <input type="text" name="footer-email" class="form-control">
-                                        <span class="form-bar"></span>
-                                        <label class="float-label"><i class="fa fa-search m-r-10"></i>Search Friend</label>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="pcoded-navigation-label">Navigation</div>
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li class="active">
-                                    <a href="index.html" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
-                                        <span class="pcoded-mtext">Dashboard</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                            
-                                </li>
-                            </ul>
-                            <div class="pcoded-navigation-label">Forms</div>
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li class="">
-                                    <a href="/login" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                        <span class="pcoded-mtext">Form</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="pcoded-navigation-label">Tables</div>
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li class="">
-                                    <a href="bs-basic-table.html" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-receipt"></i><b>B</b></span>
-                                        <span class="pcoded-mtext">Table</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                            
-                            <div class="pcoded-navigation-label">Pages</div>
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li class="pcoded-hasmenu ">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-id-badge"></i><b>A</b></span>
-                                        <span class="pcoded-mtext">Pages</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                    <ul class="pcoded-submenu">
-                                        <li class="">
-                                            <a href="auth-normal-sign-in.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Login</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="/register" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Registration</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="sample-page.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-layout-sidebar-left"></i><b>S</b></span>
-                                                <span class="pcoded-mtext">Sample Page</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <div class="pcoded-content">
-                        <!-- Page-header start -->
-                        <div class="page-header">
-                            <div class="page-block">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8">
-                                        <div class="page-header-title">
-                                            <h5 class="m-b-10">Dashboard</h5>
-                                            <p class="m-b-0">Welcome to Shree Hari PInjra Pol Gaushala</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <ul class="breadcrumb">
-                                            <li class="breadcrumb-item">
-                                                <a href="index.html"> <i class="fa fa-home"></i> </a>
-                                            </li>
-                                            <li class="breadcrumb-item"><a href="#!">Dashboard</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Page-header end -->
-                       
+                <div class="collapse in" id="collapseExample" aria-expanded="true" style="">
+                    <ul class="nav">
+                        <li>
+                            <a href="#profile">
+                                <span class="link-collapse">My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#edit">
+                                <span class="link-collapse">Edit Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#settings">
+                                <span class="link-collapse">Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="nav">
+            <li class="nav-item active">
+                <a href="index.html">
+                    <i class="la la-dashboard"></i>
+                    <p>Dashboard</p>
+                    <span class="badge badge-count">5</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="components.html">
+                    <i class="la la-table"></i>
+                    <p>Components</p>
+                    <span class="badge badge-count">14</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="forms.html">
+                    <i class="la la-keyboard-o"></i>
+                    <p>Forms</p>
+                    <span class="badge badge-count">50</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="tables.html">
+                    <i class="la la-th"></i>
+                    <p>Tables</p>
+                    <span class="badge badge-count">6</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="notifications.html">
+                    <i class="la la-bell"></i>
+                    <p>Notifications</p>
+                    <span class="badge badge-success">3</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="typography.html">
+                    <i class="la la-font"></i>
+                    <p>Typography</p>
+                    <span class="badge badge-danger">25</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="icons.html">
+                    <i class="la la-fonticons"></i>
+                    <p>Icons</p>
+                </a>
+            </li>
+         
+        </ul>
+    </div>
+</div>
 
-                                              
-
-                                    <!-- Page-body end -->
+                                
+<!-- 							<div class="col-md-3">
+                    <div class="card card-stats">
+                        <div class="card-body ">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="icon-big text-center icon-warning">
+                                        <i class="la la-pie-chart text-warning"></i>
+                                    </div>
                                 </div>
-                                <div id="styleSelector"> </div>
+                                <div class="col-7 d-flex align-items-center">
+                                    <div class="numbers">
+                                        <p class="card-category">Number</p>
+                                        <h4 class="card-title">150GB</h4>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                <div class="col-md-3">
+                    <div class="card card-stats">
+                        <div class="card-body ">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="icon-big text-center">
+                                        <i class="la la-bar-chart text-success"></i>
+                                    </div>
+                                </div>
+                                <div class="col-7 d-flex align-items-center">
+                                    <div class="numbers">
+                                        <p class="card-category">Revenue</p>
+                                        <h4 class="card-title">$ 1,345</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-stats">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="icon-big text-center">
+                                        <i class="la la-times-circle-o text-danger"></i>
+                                    </div>
+                                </div>
+                                <div class="col-7 d-flex align-items-center">
+                                    <div class="numbers">
+                                        <p class="card-category">Errors</p>
+                                        <h4 class="card-title">23</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-stats">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="icon-big text-center">
+                                        <i class="la la-heart-o text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="col-7 d-flex align-items-center">
+                                    <div class="numbers">
+                                        <p class="card-category">Followers</p>
+                                        <h4 class="card-title">+45K</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+          
+            
+<!-- Modal -->
+<div class="modal fade" id="modalUpdate" tabindex="-1" role="dialog" aria-labelledby="modalUpdatePro" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+    <div class="modal-header bg-primary">
+        <h6 class="modal-title"><i class="la la-frown-o"></i> Under Development</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
-    <!-- Warning Section Starts -->
-    <!-- Older IE warning message -->
-    <!--[if lt IE 10]>
-<div class="ie-warning">
-    <h1>Warning!!</h1>
-    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
-    <div class="iew-container">
-        <ul class="iew-download">
-            <li>
-                <a href="http://www.google.com/chrome/">
-                    <img src="assets/images/browser/chrome.png" alt="Chrome">
-                    <div>Chrome</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.mozilla.org/en-US/firefox/new/">
-                    <img src="assets/images/browser/firefox.png" alt="Firefox">
-                    <div>Firefox</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.opera.com">
-                    <img src="assets/images/browser/opera.png" alt="Opera">
-                    <div>Opera</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.apple.com/safari/">
-                    <img src="assets/images/browser/safari.png" alt="Safari">
-                    <div>Safari</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                    <img src="assets/images/browser/ie.png" alt="">
-                    <div>IE (9 & above)</div>
-                </a>
-            </li>
-        </ul>
+    <div class="modal-body text-center">									
+        <p>Currently the pro version of the <b>Ready Dashboard</b> Bootstrap is in progress development</p>
+        <p>
+            <b>We'll let you know when it's done</b></p>
     </div>
-    <p>Sorry for the inconvenience!</p>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
 </div>
-<![endif]-->
-    <!-- Warning Section Ends -->
-
-    <!-- Required Jquery -->
-  
+</div>
+</div>
 </body>
-
-</html>

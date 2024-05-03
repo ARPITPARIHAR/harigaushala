@@ -61,7 +61,7 @@
                             <a href="gallery" class="nav-item nav-link text-white">Gallery</a>
                             <a href="/generate-otp-form" class="nav-item nav-link text-white">Our Activities</a>
                             <a href="contact" class="nav-item nav-link text-white">Contact Us</a>
-                            <a href="/adminpanel" class="nav-item nav-link text-white">Log In</a>
+                            <a href="/dashboard" class="nav-item nav-link text-white">Log In</a>
                         </div>
                     </div>
                 

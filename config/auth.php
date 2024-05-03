@@ -40,6 +40,11 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        'admin' => [ // Define a new guard for admin users
+            'driver' => 'session',
+            'provider' => 'admins', // Define the admin provider
+        ],
     ],
 
     /*
@@ -65,10 +70,10 @@ return [
             'model' => App\Models\User::class,
         ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+        'admins' => [ // Define a new provider for admin users
+            'driver' => 'eloquent',
+            'model' => App\Models\Admin::class, // Replace with your admin model class
+        ],
     ],
 
     /*

@@ -19,7 +19,10 @@ Route::get('login', [HomeController::class, 'login']);
 Route::post('/get-comment', [HomeController::class, 'getComment'])->name('get-comment');
 Route::get('/captcha/image', [CaptchaController::class, 'generateCaptcha'])->name('captcha.image');
 
-Route::get('/adminpanel', [HomeController::class, 'admin']);
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', [AdminController::class, 'home'])->name('dashboard');
+});
+
 
 Route::post('feedback.store', [ContactController::class, 'store'])->name('feedback.store');
 Route::post('razorpay', [RazorpayPaymentController::class, 'index'])->name('razorpay.create');
@@ -32,6 +35,7 @@ Route::get('/send-whatsapp', [TwilioController::class, 'sendWhatsAppMessage']);
 Route::get('/generate-otp-form', [OtpController::class, 'showOtpForm'])->name('generate-otp-form');
 Route::post('/generate-otp', [OtpController::class, 'generateOtp'])->name('generate-otp');
 
+Route::get('/login', [AdminController::class, 'login'])->name('login');
 
-Route::get('/login', [AdminController::class, 'login'])->name('auth.login');
+
 Route::get('/register', [AdminController::class, 'register'])->name('auth.register');
